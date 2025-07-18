@@ -1,5 +1,438 @@
 {
-    "welcome": "Hoş geldiniz",
-    "description": "Bu çok dilli bir web uygulamasıdır."
-  }
-  
+    "nav": {
+        "home": "Anasayfa",
+        "vineyards": "Bağlarımız",
+        "about": "Hakkımızda",
+        "contact": "İletişim",
+        "blog": "Blog",
+        "vineyardInvestment": "Bağ Yatırımı",
+        "investment": "Bağ Yatırımı",
+        "purchase": "Bağ Alım Süreci",
+        "management": "Bağ İşletme"
+    },
+    "header": {
+        "motto": "Toprağa Yatırım, Geleceğe Kazanç!",
+        "call": "Çağrı bırakın!",
+        "cta": "Yatırım Yap"
+    },
+    "hero": {
+        "title": "Bağ Yatırımı ile Doğal Kazançlarınızı Büyütün",
+        "subtitle": "Sürdürülebilir bağ yatırımıyla uzun vadeli kazançlar elde ederken doğanın güzelliklerini keşfedin.",
+        "getSupport": "Yatırım Desteği Al",
+        "moreInfo": "Daha Fazla Bilgi",
+        "callFormTitle": "Destek için bir telefon uzağınızdayız.",
+        "orderCallMessage": "Müşteriden çağrı talebi",
+        "imageAlt": "Bağ Yatırımı ve Üzüm Bağı"
+    },
+    "advantage": {
+        "title": "Bağ Yatırımının Avantajları",
+        "subtitle": "Pasif gelir imkanı, tarımsal destekler, uzun vadeli kazanç…",
+        "passiveIncome": {
+            "title": "Pasif Gelir İmkanı",
+            "description": "Üzüm üretimi ile düzenli gelir sağlama fırsatı. Kiralama modeliyle hiç uğraşmadan gelir elde edebilme."
+        },
+        "quickAmortization": {
+            "title": "Hızlı Amortisman Süresi",
+            "description": "Üzüm bağı yatırımları, ortalama 3-5 yıl gibi kısa süre içerisinde kendini amorti eder."
+        },
+        "longTermValue": {
+            "title": "Uzun Vadeli Değer Artışı",
+            "description": "Bağ arazileri yıllar içinde değer kazanır. Tarıma uygun arazilerin az olması, yatırımın değerini artırır."
+        },
+        "sustainableInvestment": {
+            "title": "Sürdürülebilir ve Ekolojik Yatırım",
+            "description": "Doğayla uyumlu ve sürdürülebilir tarım imkanı. Kimyasal içermeyen organik üretim fırsatı."
+        }
+    },
+    "vineyardBanner": {
+        "title": "Hayallerinizi Ertelemeyin",
+        "area": "8000 m² Bağ",
+        "price": "800.000 TL Satış Fiyatı",
+        "income": "125.000 TL Yıllık Net Kazanç",
+        "cta": "Yatırım Sürecini İncele"
+    },
+    "vineyard": {
+        "title": "Bağ İşletme & Yönetim Hizmetleri – Profesyonel Çözümler",
+        "subtitle": "Bağınızı Biz İşleyelim! Sulama, bakım, organik üretim ve tüm süreçleri uzman ekibimizle yönetin.",
+        "button": "Bağ Yönetimi Hizmeti Al",
+        "services": {
+            "sustainability": {
+                "title": "Sürdürülebilir Tarım",
+                "description": "Bağcılığınızın sürdürülebilir olmasını sağlamak için çevre dostu ve uzun vadeli çözümler sunuyoruz."
+            },
+            "care": {
+                "title": "Bağ Bakım Hizmetleri",
+                "description": "Budama, gübreleme ve zararlılarla mücadele gibi tüm bakım hizmetlerini sağlıyoruz."
+            },
+            "organic": {
+                "title": "Organik Üretim Danışmanlığı",
+                "description": "Bağınızı kimyasallardan uzak, tamamen doğal yöntemlerle işletmenize yardımcı oluyoruz."
+            },
+            "harvest": {
+                "title": "Profesyonel Hasat ve Lojistik",
+                "description": "Üzüm hasadını en verimli şekilde gerçekleştiriyor, lojistik sürecini yönetiyoruz."
+            }
+        }
+    },
+    "form": {
+        "callFromTitle": "Çağrı bırakın! Sizi Arayalım.",
+        "title": "Bize Ulaşın",
+        "subtitle": "WhatsApp üzerinden iletişime geçebilir veya formu doldurabilirsiniz.",
+        "whatsapp": "WhatsApp ile İletişime Geç",
+        "button": "Formu Doldur",
+        "nameLabel": "Ad-Soyad",
+        "emailLabel": "E-mail",
+        "phoneLabel": "Telefon",
+        "namePlaceholder": "Adınızı yazınız",
+        "emailPlaceholder": "Emailinizi yazınız",
+        "phonePlaceholder": "Telefon numaranız",
+        "submit": "Gönder",
+        "submit_text": "butonuna tıklayarak",
+        "submit_link": "kişisel verilerinizin",
+        "submit_approve": " işlenmesine onay vermiş olursunuz."
+    },
+    "testimonials": {
+        "title": "Müşteri Deneyimleri – Güvenilir Bağ Yatırımı Hikayeleri",
+        "subtitle": "Bağ yatırımcılarımızın gerçek deneyimlerine göz atın. Güvenilir, kârlı ve sürdürülebilir bağ yatırımlarıyla ilgili memnuniyetlerini keşfedin!"
+    },
+    "blog": {
+        "title": "Bağ Yatırımı ve Üzüm Bağları Hakkında Güncel Bilgiler",
+        "subtitle": "Bağ yatırımına dair en güncel bilgiler, uzman görüşleri ve püf noktaları. Üzüm bağlarıyla ilgili güncel haberleri kaçırmayın!",
+        "readMore": "Devamını Oku →",
+        "viewAll": "Tüm Blog Yazılarını Gör"
+    },
+    "contact": {
+        "title": "Hayalinizdeki Bağ Yatırımı İçin Bir Telefon Uzağındayız!",
+        "subtitle": "Bağ satın alma, işletme ve gelir süreci hakkında detaylı bilgi almak için şimdi bize ulaşın. Sizin için en doğru yatırım fırsatlarını birlikte değerlendirelim.",
+        "contactInfoTitle": "İletişim Bilgileri",
+        "contactFormTitle": "İletişim Formu",
+        "nameLabel": "Ad-Soyad",
+        "emailLabel": "E-mail",
+        "messageLabel": "Mesaj",
+        "namePlaceholder": "Adınızı yazınız",
+        "emailPlaceholder": "Emailinizi yazınız",
+        "messagePlaceholder": "Mesajınızı yazınız",
+        "submitButton": "Gönder"
+    },
+    "footer": {
+        "company": "Şirket Bilgileri",
+        "location": "Konya - Bozkır / Hamzalar",
+        "contact": {
+            "phone": "0507 987 00 88",
+            "email": "info@bagyatirimi.com"
+        },
+        "quickMenu": "Hızlı Menü",
+        "followUs": "Bizi Takip Edin",
+        "privacyPolicy": "Gizlilik Politikası",
+        "termsOfUse": "Kullanım Şartları",
+        "copyright": "© 2025 Bağ Yatırımı & Yönetimi. Tüm Hakları Saklıdır.",
+        "links": {
+            "home": "Anasayfa",
+            "forSale": "Satılık Bağlar",
+            "aboutUs": "Hakkımızda",
+            "contact": "İletişim",
+            "blog": "Blog"
+        }
+    },
+    "bozkir": {
+        "helmet": {
+            "title": "Konya Bozkır Hamzalar'daki Bağlarımız | Doğal Üzüm Yetiştiriciliği",
+            "description": "Konya'nın Bozkır ilçesine bağlı Hamzalar bölgesinde doğal yöntemlerle yetiştirilen, kimyasal katkı maddesi içermeyen üzüm çeşitlerimiz ve bağcılıkla ilgili bilgileri keşfedin.",
+            "keywords": "Bağcılık, Doğal Üzüm, Konya, Hamzalar, Üzüm Çeşitleri, Organik Üzüm, Doğal Yetiştirme"
+        },
+        "hero": {
+            "title": "Konya Bozkır Hamzalar'daki Bağlarımız"
+        },
+        "sections": {
+            "region_features": "Bölgenin Özellikleri",
+            "climate_soil": "İklim ve Toprak Yapısı",
+            "grape_varieties": "Üzüm Çeşitlerimiz",
+            "farming_methods": "Doğal ve Geleneksel Yetiştirme Yöntemleri",
+            "harvest": "Üzüm Hasadı ve İşleme Süreci",
+            "economy": "Bölgenin Bağcılıktaki Önemi ve Ekonomik Katkısı",
+            "gallery": "Fotoğraf Galerisi",
+            "gallery_note": "(Bu alanda bağlarımızdan çekilmiş yüksek kaliteli görsellere yer verilecektir.)"
+        },
+        "grape_varieties_description": "Bağlarımızda yetiştirdiğimiz üzümler, bölgenin kendine özgü doğal şartlarında yetiştirildiği için yüksek kaliteye sahiptir. Üzüm çeşitlerimiz şunlardır:",
+        "farming_description": "Bağlarımızda geleneksel yöntemlerle üzüm yetiştiriyoruz. Kimyasal gübre veya ilaç kullanmadan, doğanın sunduğu en iyi koşullarda üretim yapıyoruz...",
+        "harvest_description": "Hasat süreci, yetiştirildiği bölgenin iklim koşullarına ve üzüm türüne bağlı olarak farklılık gösterir..."
+    },
+    "aboutUs": {
+        "heroTitle": "Bağ Bahçe Yatırım: 17 Yıldır Gayrimenkul Sektöründe Güvenli Yatırımlar",
+        "heroSubtitle": "Lidya Emlak güvencesi ve deneyimiyle sektördeki en iyi yatırım fırsatlarını sunuyoruz.",
+        "historyTitle": "Sektörde 17 Yıl: Güven, Deneyim ve Uzmanlık",
+        "historySubtitle": "17 yıl önce Lidya Emlak çatısı altında başladığımız bu yolculukta, yatırımcılarımıza güvenli ve kârlı fırsatlar sunduk.",
+        "historySubtitle_2": "Konya Bozkır bölgesinde üzüm bağı yatırımları konusunda uzmanlaşarak, sürdürülebilir ve karlı yatırım modelleri geliştirdik.",
+        "experinceYear": "Yıllık Deneyim",
+        "happyCustomer": "Mutlu Yatırımcı",
+        "vineyardArea": "Hektar Bağ",
+        "happinessCustomer": "Müşteri Memnuniyeti",
+        "missionVisionTitle": "Misyonumuz ve Vizyonumuz",
+        "mission": "Misyonumuz",
+        "vision": "Vizyonumuz",
+        "missionSubtitle": "Yatırımcılarımıza yüksek kâr sağlayacak güvenli yatırımlar sunmak. Doğayla uyumlu, sürdürülebilir tarım modelleriyle hem çevreye hem de ekonomiye değer katmak.",
+        "visionSubtitle": "Sektördeki liderliğimizi sürekli olarak güçlendirerek, yatırımcılarımız için daha fazla fırsat yaratmak ve Türkiye'nin en güvenilir bağ yatırım platformu olmak.",
+        "partnershipTitle": "Lidya Emlak: Birlikte Daha Güçlüyüz",
+        "partnershipSubtitle": "Bağ Bahçe Yatırım, Lidya Emlak ile güçlü bir ortaklık yaparak, sektördeki en güvenilir ve profesyonel çözümleri sunuyor.",
+        "ctaTitle": "Geleceğe Yatırım Yapın, Bağ Bahçe Yatırım ile Yüksek Kârlar Elde Edin",
+        "ctaSubtitle": "Eğer güvenli ve kârlı bir gayrimenkul yatırımı yapmak istiyorsanız, doğru yerdesiniz. Bizimle iletişime geçin!"
+    },
+    "contact_page": {
+        "meta": {
+            "title": "İletişim | Üzüm Bağı Yatırımı İçin Bize Ulaşın",
+            "description": "Bağ yatırımı hakkında sorularınız mı var? Hemen bize ulaşın, size özel çözümlerimizi sunalım."
+        },
+        "title": "Hadi Bağlantıya Geçelim",
+        "subtitle": "Üzüm bağı yatırımıyla ilgili her türlü sorunuz için bizimle iletişime geçin. Size özel fırsatları konuşalım!",
+        "infoTitle": "İletişim Bilgileri",
+        "formTitle": "Bize Yazın",
+        "newsletterTitle": "Bültenimize Katılın 📬",
+        "newsletterDesc": "Yatırım fırsatlarından ilk siz haberdar olun.",
+        "phone": "Telefon",
+        "email": "E-posta",
+        "address": "Adres",
+        "labels": {
+            "name": "Ad-Soyad",
+            "email": "E-mail",
+            "message": "Mesaj"
+        },
+        "placeholders": {
+            "name": "Adınızı yazınız",
+            "email": "Emailinizi yazınız",
+            "message": "Mesajınızı yazınız"
+        },
+        "buttons": {
+            "send": "Gönder",
+            "subscribe": "Abone Ol"
+        }
+    },
+    "blogPage": {
+        "title": "Blog",
+        "metaTitle": "Bağcılık Blogu | Yatırım, Tarım ve Üzüm Bağları",
+        "metaDescription": "Bağ yatırımı, organik tarım ve üzüm bağları hakkında güncel bilgileri keşfedin.",
+        "readMore": "Devamını Oku"
+    },
+    "vineyardInvestment": {
+        "meta": {
+            "title": "Bağ Yatırımı | Kazançlı ve Sürdürülebilir Tarım Yatırımı",
+            "description": "Bağ yatırımı ile uzun vadeli kazanç sağlayın. Şarapçılık, kuru üzüm üretimi ve tarım sektöründe büyük potansiyel keşfedin."
+        },
+        "hero": {
+            "title": "Bağ Yatırımı: Doğanın İçinde Kazançlı Bir Gelecek",
+            "description": "Üzüm bağı yatırımı, yalnızca tarım sektöründe değil, aynı zamanda şarapçılık ve kuru üzüm gibi endüstrilerde de büyük bir potansiyele sahiptir..."
+        },
+        "advantages": {
+            "title": "Bağ Yatırımının Avantajları",
+            "items": {
+                "1": "Yüksek getirili ve sürdürülebilir bir yatırım imkanı",
+                "2": "Şarapçılık, kuru üzüm ve sofralık üzüm gibi farklı gelir modelleri",
+                "3": "Tarım arazilerinin zamanla değer kazanma potansiyeli",
+                "4": "Doğayla iç içe, keyifli ve uzun vadeli bir yatırım fırsatı"
+            }
+        },
+        "profitability": {
+            "title": "Üzüm Bağı Yatırımında Karlılık",
+            "text1": "Piyasada kuru üzüm kilogram fiyatı",
+            "priceRange": "250 - 350 TL",
+            "text2": "arasında değişmektedir. İlginç bir şekilde, 1 metrekare bağ alanının fiyatı genellikle bir kilogram üzüm fiyatına eşittir. Bu da, bağ yatırımı yapanların ortalama",
+            "returnYears": "3-5 yıl",
+            "text3": "içerisinde yatırımlarını amorti edebileceği anlamına gelir."
+        },
+        "howToStart": {
+            "title": "Bağ Yatırımına Nasıl Başlanır?",
+            "steps": {
+                "1": "Doğru lokasyonda verimli bir bağ alanı seçmek",
+                "2": "Toprak analizi yaparak en uygun üzüm çeşidini belirlemek",
+                "3": "Uzun vadeli verim için etkili tarımsal çözümler kullanmak",
+                "4": "Üzümün pazarlanacağı alanları önceden belirlemek",
+                "5": "Bağ yönetimi için uzman desteği almak"
+            }
+        },
+        "risks": {
+            "title": "Bağ Yatırımında Riskler ve Çözüm Önerileri",
+            "intro": "Her yatırımda olduğu gibi, üzüm bağı yatırımının da bazı riskleri vardır. Aşağıda bu riskler ve çözüm önerileri bulunmaktadır:",
+            "items": {
+                "1": "Hava koşulları (dondurucu soğuk, aşırı yağış)",
+                "2": "Hastalık ve zararlılar",
+                "3": "Pazar dalgalanmaları",
+                "4": "Yanlış bakım teknikleri",
+                "5": "Sigorta eksiklikleri"
+            },
+            "conclusion": "Ancak doğru bakım teknikleri ve sigorta seçenekleriyle bu riskler minimize edilebilir."
+        },
+        "footer": {
+            "title": "Bağ Yatırımı ile İlgileniyor musunuz?",
+            "phone": "Bizi Arayın",
+            "email": "E-posta Gönderin"
+        }
+    },
+    "guide": {
+        "meta": {
+            "title": "Bağ Alım Süreci | Güvenli ve Kârlı Bağ Yatırımı",
+            "description": "Bağ alım sürecini adım adım öğrenin. Güvenli yatırım yaparak üzüm bağlarına sahip olun."
+        },
+        "header": {
+            "title": "Bağ Alım Süreci"
+        },
+        "cta": {
+            "title": "Fırsatları Kaçırmayın",
+            "description": "Bağ yatırım sürecini öğrendiniz. Şimdi harekete geçme zamanı! Size özel avantajlı fırsatlar ve detaylar için hemen bizimle iletişime geçin.",
+            "contactLink": "Hemen İletişime Geçin"
+        },
+        "steps": {
+            "step1": {
+                "title": "Yatırım yapılacak tarlanın seçimi",
+                "desc": [
+                    "Bölgenin iklimi ve toprak kalitesi değerlendirilir.",
+                    "Uzun vadeli verimlilik açısından en uygun lokasyon belirlenir."
+                ]
+            },
+            "step2": {
+                "title": "Kaparo alınması",
+                "desc": [
+                    "Satıcı ile anlaşma sağlandıktan sonra ön ödeme yapılır.",
+                    "Bu aşamada alım süreci resmileştirilir."
+                ]
+            },
+            "step3": {
+                "title": "Tapu başvurusu ve resmi işlemler",
+                "desc": [
+                    "Tapu devri için gerekli tüm belgeler eksiksiz şekilde hazırlanır.",
+                    "Yetkili kurumlarla işlemler yürütülerek tapu süreci resmileştirilir."
+                ]
+            },
+            "step4": {
+                "title": "Tapu sahibinin hesabına paranın gönderilmesi",
+                "desc": [
+                    "Tapu işlemleri tamamlandığında ödeme gerçekleştirilir.",
+                    "Ödeme dekontu resmi kayıtlara işlenir."
+                ]
+            },
+            "step5": {
+                "title": "Century 21 Karun ile Yarıcılık sözleşmesi yapılması",
+                "desc": [
+                    "Bağın işletilmesi için profesyonel hizmet anlaşması imzalanır.",
+                    "Bağ bakımı ve hasat süreci planlanır."
+                ]
+            },
+            "step6": {
+                "title": "Toprağın hazırlanması, bağ bakım işlemleri ve ürün takibi",
+                "desc": [
+                    "Ürün kalitesini artırmak için bilinçli bakım çalışmaları yapılır, gelişim süreci düzenli olarak izlenir.",
+                    "Uzun vadeli verimlilik için bağ düzenli olarak bakım ve kontrollerden geçirilir."
+                ]
+            },
+            "step7": {
+                "title": "Gelir raporu sunulması ve tapu sahibine ödeme yapılması",
+                "desc": [
+                    "Hasat sonrası satış işlemi tamamlanır.",
+                    "Gelir raporu hazırlanarak yatırımcıya ödeme yapılır."
+                ]
+            }
+        }
+    },
+    "vineyardManagement": {
+        "mainTitle": "Bağ İşletme Süreci",
+        "title1": "1. Uzman Ekip ile Profesyonel Yönetim",
+        "content1": "Bağınız, alanında uzman tarım mühendisleri ve ziraat teknikerlerinden oluşan bir ekip tarafından yıl boyunca profesyonelce yönetilir.\n\n- Budama\n- Gübreleme\n- Zararlılarla mücadele\n- Doğal sulama takibi",
+        "title2": "2. Mevsimsel İş Takvimi",
+        "content2": "Bağınızın gelişimi, doğanın döngüsüne uygun olarak yıllık bir plan dahilinde yürütülür:\n\n- İlkbahar: Budama, toprak işleme\n- Yaz: Gözlem, hastalık takibi\n- Sonbahar: Hasat, verim analizleri\n- Kış: Kışa hazırlık ve bakım",
+        "title3": "3. Verim ve Kalite Raporlaması",
+        "content3": "Her sezon sonunda yatırımcıya detaylı verim ve kalite raporları sunulur:\n\n- Ürün miktarı\n- Üzüm kalitesi\n- Toprak ve hava koşullarının etkisi\n- Gelecek yıl için öneriler",
+        "title4": "4. Ürün Değerlendirme Seçenekleri",
+        "content4": "Bağınızdan elde edilen üzümler farklı şekillerde değerlendirilebilir:\n\n- Doğrudan satış (toptan veya perakende)\n- Şarap üretimi\n- Kurutmalık veya sofralık satış\n- Kendi markanızı oluşturma",
+        "title5": "5. Görsel Takip Sistemi",
+        "content5": "Bağınıza uzaktan da yakın olun:\n\n- Aylık fotoğraf raporları\n- Drone çekimleri\n- Video güncellemeleri\n- Dijital panel üzerinden anlık erişim",
+        "title6": "6. Yerinde Ziyaret ve Danışmanlık",
+        "content6": "Yatırımcılarımız diledikleri zaman bağlarını ziyaret edebilir. Ayrıca uzmanlarımızdan:\n\n- Bağ genişletme önerileri\n- Tarımsal teşvik ve hibeler hakkında bilgi\n- Yeni yatırımlar için analiz desteği alabilir",
+        "title7": "7. Doğa Dostu ve Sürdürülebilir Uygulamalar",
+        "content7": "Bağlarımızda kimyasal kullanım minimum seviyededir:\n\n- Toprak sağlığına duyarlı gübreleme\n- Doğal yöntemlerle zararlı kontrolü\n- Yağmur ve kar suyu ile doğal sulama sistemi\n- Biyoçeşitlilik dostu tarım"
+    },
+    "vineyard_management": {
+        "title": "🌿 Bağ İşletme Süreci",
+        "subtitle": "Bağınız emin ellerde, dört mevsim kontrollü yönetimle büyür.",
+        "sections": [
+            {
+                "heading": "Uzman Ekip Tarafından Yönetim",
+                "text": "Satın alınan bağlar, bağcılık konusunda deneyimli bir ekip tarafından yıl boyunca düzenli olarak yönetilir. Budama, sulama, gübreleme, hastalık ve zararlı takibi gibi işlemler profesyonelce yürütülür.",
+                "note": "💡 Yatırımcı uzakta olsa bile, bağı emin ellerde olur."
+            },
+            {
+                "heading": "Yıllık İş Takvimi",
+                "text": "Bağın tüm yıl boyunca nasıl bir takvime göre yönetildiği detaylandırılır:",
+                "note": "📅 Her mevsim için ayrı bir strateji.",
+                "list": [
+                    "İlkbahar: Budama, toprak havalandırma",
+                    "Yaz: Sulama, hastalık takibi",
+                    "Sonbahar: Hasat, verim raporu",
+                    "Kış: Kışa hazırlık, bakım"
+                ]
+            },
+            {
+                "heading": "Verim ve Kalite Takibi",
+                "text": "Yapılan her işlem kayıt altına alınır. Yatırımcıya dönemsel verim raporları ve bağın durumu hakkında bilgiler sunulur.",
+                "list": [
+                    "Kaç kilo üzüm alındı?",
+                    "Üzüm kalitesi nasıldı?",
+                    "Önümüzdeki dönem için öneriler neler?"
+                ]
+            },
+            {
+                "heading": "Ürün Değerlendirme Seçenekleri",
+                "text": "Yatırımcı dilerse ürününü:",
+                "list": [
+                    "Kendi markasıyla şişeleyip satabilir",
+                    "Toplu olarak satabilir",
+                    "Kurutmalık ya da şaraplık olarak değerlendirebilir"
+                ],
+                "note": "🍇 Sadece yatırım değil, bir marka fırsatı da olabilir."
+            },
+            {
+                "heading": "Görsel ve Dijital Takip",
+                "text": "Bağın gelişimi, drone çekimleri ve aylık fotoğraflarla yatırımcıya sunulur. Ayrıca dijital bir platform üzerinden yatırımcı, bağının son durumunu takip edebilir."
+            },
+            {
+                "heading": "Yerinde Ziyaret ve Danışmanlık",
+                "text": "Yatırımcılar istedikleri zaman bağlarını ziyaret edebilir, uzmanlardan bire bir bilgi alabilirler. Ayrıca bağ geliştirme ve büyütme konusunda danışmanlık hizmeti de verilir."
+            },
+            {
+                "heading": "Sürdürülebilir ve Doğa Dostu Uygulamalar",
+                "text": "Bağ yönetimi sürecinde çevreye duyarlı, sürdürülebilir tarım teknikleri kullanılır."
+            }
+        ],
+        "cta": "Bize Ulaşın ve Bağ Yatırımınıza Başlayın"
+    },
+    "vineyardManagementModel": {
+        "pageTitle": "Bağ İşletme Modeli | Karun Gayrimenkul",
+        "pageDescription": "Karun Gayrimenkul olarak, bağ yatırımlarınızı profesyonel ekiplerle yönetiyor ve maksimum kazanç sağlıyoruz. Yeni nesil tarım ve ortaklık modeli hakkında bilgi alın.",
+        "heroTitle": "Bağ İşletme Modeli",
+        "heroSubtitle": "Yatırımınızda yalnız değilsiniz – profesyonel ekip, sürdürülebilir kazanç, modern tarım",
+        "introTitle": "Karun Gayrimenkul Olarak Ne Yapıyoruz?",
+        "introText": "22 yıllık tecrübemizle, gayrimenkul yatırımlarınızı doğru yönlendiriyor; satın alma, işletme ve gelir ortaklığı süreçlerinde sizinle birlikte yürüyoruz.",
+        "whatIsModelTitle": "Bağ İşletme Modeli Nedir?",
+        "whatIsModelText": "Yatırımcının bağ/arazi sahibi olduğu, Karun Gayrimenkul’ün ise bakım, üretim ve satış süreçlerini yönettiği sürdürülebilir bir ortaklık modelidir. Gelir paylaşımı esasına dayanır.",
+        "stepsTitle": "Adım Adım İşletme Süreci",
+        "steps": [
+            "Yatırım bütçenize uygun arazinin birlikte seçilmesi",
+            "Arazi sahibinden tapu işlemlerinin gerçekleştirilmesi",
+            "Bağ bakım & işletme sözleşmesinin imzalanması",
+            "Sigorta işlemlerinin yapılması (talebe bağlı)",
+            "Budama, sürüm, delice temizliği ve bakım süreci",
+            "Kükürt uygulaması ve zararlılara karşı mücadele",
+            "Bağ bozumu ve ürün satış süreci",
+            "Ürün verimi, satış ve ciro raporlaması"
+        ],
+        "profitTitle": "Kazanç ve Ortaklık Yapısı",
+        "profitText": "Satıştan elde edilen toplam ciro, %50-%50 oranında paylaşılır. Yatırımcı, net cironun yarısını alırken; kalan yarısı Karun Gayrimenkul’ün hizmet bedelidir.",
+        "whyUsTitle": "Neden Karun Gayrimenkul?",
+        "whyUsBullets": [
+            "22 yıllık sektör tecrübesi",
+            "Uluslararası iş ortaklıkları (Mastırtürk - Century21)",
+            "Bölgeye hâkim uzman tarım ekipleri",
+            "Şeffaf süreç takibi ve raporlama",
+            "Yeni nesil tarım (hibrit tarım, sürdürülebilirlik)"
+        ],
+        "ctaText": "Bağ yatırımı yapmak ya da detaylı bilgi almak ister misiniz?",
+        "ctaButton": "Hemen Bize Ulaşın"
+    }
+}

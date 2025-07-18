@@ -1,5 +1,414 @@
 {
-    "welcome": "Welcome",
-    "description": "This is a multilingual web application."
-  }
-  
+    "nav": {
+        "home": "Home",
+        "vineyards": "Vineyards",
+        "about": "About Us",
+        "contact": "Contact",
+        "blog": "Blog",
+        "vineyardInvestment": "Vineyard Investment",
+        "investment": "Investment Info",
+        "purchase": "Purchase Process",
+        "management": "Vineyard Management"
+    },
+    "header": {
+        "motto": "Invest in Soil, Earn for the Future!",
+        "call": "Request a Call!",
+        "cta": "Invest Now"
+    },
+    "hero": {
+        "title": "Invest in Vineyards — Grow Your Wealth Naturally",
+        "subtitle": "Secure long-term returns while enjoying the beauty of nature with sustainable vineyard investments.",
+        "getSupport": "Get Investment Support",
+        "moreInfo": "Learn More",
+        "callFormTitle": "We're just a phone call away for support.",
+        "orderCallMessage": "Order call from client",
+        "imageAlt": "Vineyard Investment and Grapevine"
+    },
+    "advantage": {
+        "title": "Advantages of Vineyard Investment",
+        "subtitle": "Passive income opportunity, agricultural support, long-term profits...",
+        "passiveIncome": {
+            "title": "Passive Income Opportunity",
+            "description": "Regular income generation through grape production. Earning income effortlessly with a leasing model."
+        },
+        "quickAmortization": {
+            "title": "Quick Amortization Period",
+            "description": "Vineyard investments typically pay off within a short period of 3-5 years."
+        },
+        "longTermValue": {
+            "title": "Long-Term Value Increase",
+            "description": "Vineyard lands appreciate over time. The scarcity of agriculturally suitable lands increases the value of investments."
+        },
+        "sustainableInvestment": {
+            "title": "Sustainable and Ecological Investment",
+            "description": "Eco-friendly and sustainable farming opportunities. Organic production without chemicals."
+        }
+    },
+    "vineyardBanner": {
+        "title": "Don't Postpone Your Dreams",
+        "area": "8000 m² Vineyard",
+        "price": "800,000 TL Sale Price",
+        "income": "125,000 TL Annual Net Income",
+        "cta": "Explore Investment Process"
+    },
+    "vineyard": {
+        "title": "Vineyard Operation & Management Services – Professional Solutions",
+        "subtitle": "Let us manage your vineyard! From irrigation to care and organic production with our expert team.",
+        "button": "Get Vineyard Management Service",
+        "services": {
+            "sustainability": {
+                "title": "Sustainable Agriculture",
+                "description": "We provide eco-friendly and long-term solutions to ensure the sustainability of your viticulture."
+            },
+            "care": {
+                "title": "Vineyard Maintenance Services",
+                "description": "We provide all maintenance services like pruning, fertilizing, and pest control."
+            },
+            "organic": {
+                "title": "Organic Production Consultancy",
+                "description": "We help you manage your vineyard with completely natural methods, free from chemicals."
+            },
+            "harvest": {
+                "title": "Professional Harvest & Logistics",
+                "description": "We carry out grape harvest efficiently and manage the logistics process."
+            }
+        }
+    },
+    "form": {
+        "callFromTitle": "Leave Your Number! We'll Call You Back.",
+        "title": "Contact Us",
+        "subtitle": "You can contact us via WhatsApp or fill out the form.",
+        "whatsapp": "Contact via WhatsApp",
+        "button": "Fill the Form",
+        "nameLabel": "Name & Surname",
+        "emailLabel": "Email",
+        "phoneLabel": "Phone",
+        "namePlaceholder": "Enter your name",
+        "emailPlaceholder": "Enter your email",
+        "phonePlaceholder": "Your phone number",
+        "submit": "Send",
+        "submit_text": "By clicking",
+        "submit_link": "your personal data",
+        "submit_approve": "you agree to the processing of"
+    },
+    "testimonials": {
+        "title": "Customer Experiences – Trusted Vineyard Investment Stories",
+        "subtitle": "Check out real experiences from our vineyard investors. Discover their satisfaction with reliable, profitable, and sustainable vineyard investments!"
+    },
+    "blog": {
+        "title": "Current Information on Vineyard Investment and Vineyards",
+        "subtitle": "The latest information, expert opinions, and tips on vineyard investments. Don't miss the latest news on vineyards!",
+        "readMore": "Read More →",
+        "viewAll": "View All Blog Posts"
+    },
+    "contact": {
+        "title": "We Are Just a Phone Call Away for Your Dream Vineyard Investment!",
+        "subtitle": "Get detailed information about purchasing, operating, and generating income from vineyards. Let's evaluate the best investment opportunities for you.",
+        "contactInfoTitle": "Contact Information",
+        "contactFormTitle": "Contact Form",
+        "nameLabel": "Full Name",
+        "emailLabel": "E-mail",
+        "messageLabel": "Message",
+        "namePlaceholder": "Enter your name",
+        "emailPlaceholder": "Enter your email",
+        "messagePlaceholder": "Enter your message",
+        "submitButton": "Submit"
+    },
+    "footer": {
+        "company": "Company Info",
+        "location": "Konya - Bozkır / Hamzalar",
+        "contact": {
+            "phone": "+90 507 987 00 88",
+            "email": "info@bagyatirimi.com"
+        },
+        "quickMenu": "Quick Menu",
+        "followUs": "Follow Us",
+        "privacyPolicy": "Privacy Policy",
+        "termsOfUse": "Terms of Use",
+        "copyright": "© 2025 Vineyard Investment & Management. All rights reserved.",
+        "links": {
+            "home": "Home",
+            "forSale": "Vineyards for Sale",
+            "aboutUs": "About Us",
+            "contact": "Contact",
+            "blog": "Blog"
+        }
+    },
+    "bozkir": {
+        "helmet": {
+            "title": "Our Vineyards in Hamzalar, Bozkır, Konya | Natural Grape Growing",
+            "description": "Discover our naturally grown grape varieties and viticulture practices in the Hamzalar region of Bozkır, Konya — all chemical-free and tradition-based.",
+            "keywords": "Viticulture, Natural Grapes, Konya, Hamzalar, Grape Varieties, Organic Grapes, Natural Farming"
+        },
+        "hero": {
+            "title": "Our Vineyards in Hamzalar, Bozkır, Konya"
+        },
+        "sections": {
+            "region_features": "Regional Features",
+            "climate_soil": "Climate and Soil Structure",
+            "grape_varieties": "Our Grape Varieties",
+            "farming_methods": "Natural and Traditional Farming Methods",
+            "harvest": "Grape Harvesting and Processing",
+            "economy": "The Region’s Role in Viticulture and Economic Contribution",
+            "gallery": "Photo Gallery",
+            "gallery_note": "(This section will feature high-quality photos from our vineyards.)"
+        },
+        "grape_varieties_description": "The grapes we grow in our vineyards are of high quality due to the region’s unique natural conditions. Our varieties include:",
+        "farming_description": "We grow our grapes using traditional methods. No chemical fertilizers or pesticides are used — only what nature provides, resulting in a clean and sustainable crop.",
+        "harvest_description": "The harvest process varies depending on grape type and local climate. After being picked, grapes are carefully processed using traditional methods, ensuring their quality is preserved."
+    },
+    "aboutUs": {
+        "heroTitle": "Bağ Bahçe Yatırım: Secure Investments in the Real Estate Sector for 17 Years",
+        "heroSubtitle": "Offering the best investment opportunities in the sector with the assurance and the experience of Lidya Emlak.",
+        "historyTitle": "17 Years in the Sector: Trust, Experience, and Expertise",
+        "historySubtitle": "Starting our journey under the Lidya Emlak umbrella 17 years ago, we have provided our investors with secure and profitable opportunities.",
+        "missionVisionTitle": "Our Mission and Vision",
+        "missionSubtitle": "Our mission is to offer secure investments that will provide high profits for our investors.",
+        "visionSubtitle": "Our vision is to continuously strengthen our leadership in the sector and create more opportunities for our investors.",
+        "partnershipTitle": "Lidya Emlak: Stronger Together",
+        "partnershipSubtitle": "Bağ Bahçe Yatırım has formed a strong partnership with Lidya Emlak, offering the most reliable and professional solutions in the industry.",
+        "ctaTitle": "Invest in the Future, Gain High Profits with Bağ Bahçe Yatırım",
+        "ctaSubtitle": "If you want to make a secure and profitable real estate investment, you are in the right place. Contact us!"
+    },
+    "contact_page": {
+        "meta": {
+            "title": "Contact | Reach Out for Your Vineyard Investment",
+            "description": "Have questions about vineyard investment? Contact us now and let us provide you with tailored solutions."
+        },
+        "title": "Let's Get in Touch",
+        "subtitle": "For any questions about vineyard investments, feel free to reach out. Let's discuss the best options for you!",
+        "infoTitle": "Contact Information",
+        "formTitle": "Write to Us",
+        "newsletterTitle": "Join Our Newsletter 📬",
+        "newsletterDesc": "Be the first to hear about new investment opportunities.",
+        "phone": "Phone",
+        "email": "Email",
+        "address": "Address",
+        "labels": {
+            "name": "Full Name",
+            "email": "Email",
+            "message": "Message"
+        },
+        "placeholders": {
+            "name": "Enter your name",
+            "email": "Enter your email",
+            "message": "Write your message"
+        },
+        "buttons": {
+            "send": "Send",
+            "subscribe": "Subscribe"
+        }
+    },
+    "blogPage": {
+        "title": "Blog",
+        "metaTitle": "Viticulture Blog | Investment, Agriculture and Vineyards",
+        "metaDescription": "Explore the latest insights on vineyard investments, organic farming, and grape production.",
+        "readMore": "Read More"
+    },
+    "vineyardInvestment": {
+        "meta": {
+            "title": "Vineyard Investment | Profitable and Sustainable Agricultural Investment",
+            "description": "Generate long-term income with vineyard investment. Discover great potential in winemaking, raisin production, and the agricultural sector."
+        },
+        "hero": {
+            "title": "Vineyard Investment: A Profitable Future in Nature",
+            "description": "Investing in vineyards offers significant potential not only in agriculture but also in industries like winemaking and raisin production..."
+        },
+        "advantages": {
+            "title": "Advantages of Vineyard Investment",
+            "items": {
+                "1": "High-yield and sustainable investment opportunity",
+                "2": "Multiple revenue models such as winemaking, raisin production, and table grapes",
+                "3": "Potential for agricultural land to increase in value over time",
+                "4": "A long-term, rewarding investment experience close to nature"
+            }
+        },
+        "profitability": {
+            "title": "Profitability in Vineyard Investment",
+            "text1": "In the market, the price per kilogram of dried grapes ranges between",
+            "priceRange": "250 - 350 TL",
+            "text2": ". Interestingly, the cost of 1 square meter of vineyard land is often equal to the price of one kilogram of grapes. This means that vineyard investors can generally recover their investment in",
+            "returnYears": "3-5 years",
+            "text3": "."
+        },
+        "howToStart": {
+            "title": "How to Start a Vineyard Investment?",
+            "steps": {
+                "1": "Choose a productive vineyard area in the right location",
+                "2": "Determine the most suitable grape variety through soil analysis",
+                "3": "Implement effective agricultural solutions for long-term yield",
+                "4": "Identify target markets for grape sales in advance",
+                "5": "Get expert support for vineyard management"
+            }
+        },
+        "risks": {
+            "title": "Risks and Solutions in Vineyard Investment",
+            "intro": "Like any investment, vineyard investments also come with certain risks. Here are some of those risks and their possible solutions:",
+            "items": {
+                "1": "Weather conditions (freezing cold, excessive rain)",
+                "2": "Diseases and pests",
+                "3": "Market fluctuations",
+                "4": "Improper maintenance techniques",
+                "5": "Lack of insurance"
+            },
+            "conclusion": "However, with proper care techniques and insurance options, these risks can be minimized."
+        },
+        "footer": {
+            "title": "Interested in Vineyard Investment?",
+            "phone": "Call Us",
+            "email": "Send an Email"
+        }
+    },
+    "guide": {
+        "meta": {
+            "title": "Vineyard Purchase Process | Safe and Profitable Vineyard Investment",
+            "description": "Learn the steps of the vineyard purchase process. Make a secure investment and own vineyards."
+        },
+        "header": {
+            "title": "Vineyard Purchase Process"
+        },
+        "cta": {
+            "title": "Don’t Miss the Opportunities",
+            "description": "You’ve learned about the vineyard investment process. Now it’s time to act! Contact us for exclusive offers and details.",
+            "contactLink": "Contact Us Now"
+        },
+        "steps": {
+            "step1": {
+                "title": "Selection of the investment land",
+                "desc": [
+                    "The region’s climate and soil quality are carefully evaluated.",
+                    "The most suitable location is selected for long-term productivity."
+                ]
+            },
+            "step2": {
+                "title": "Deposit Payment",
+                "desc": [
+                    "A down payment is made after an agreement with the seller.",
+                    "This step formalizes the purchase process."
+                ]
+            },
+            "step3": {
+                "title": "Tapu başvurusu ve resmi işlemler",
+                "desc": [
+                    "Tapu devri için gerekli tüm belgeler eksiksiz şekilde hazırlanır.",
+                    "Yetkili kurumlarla işlemler yürütülerek tapu süreci resmileştirilir."
+                ]
+            },
+            "step4": {
+                "title": "Sending Money to the Deed Owner’s Account",
+                "desc": [
+                    "Payment is made after the deed procedures are completed.",
+                    "The payment receipt is processed into official records."
+                ]
+            },
+            "step5": {
+                "title": "Signing the Brokerage Agreement with Century 21 Karun",
+                "desc": [
+                    "A professional service agreement for vineyard management is signed.",
+                    "Vineyard maintenance and harvest processes are planned."
+                ]
+            },
+            "step6": {
+                "title": "Soil Preparation, Vineyard Maintenance, and Product Tracking",
+                "desc": [
+                    "Conscious maintenance practices are carried out to improve product quality, and the development process is monitored regularly.",
+                    "For long-term productivity, the vineyard is routinely maintained and inspected."
+                ]
+            },
+            "step7": {
+                "title": "Income Report and Payment to the Deed Owner",
+                "desc": [
+                    "After the harvest, the sales process is completed.",
+                    "An income report is prepared and payment is made to the investor."
+                ]
+            }
+        }
+    },
+    "vineyard_management": {
+        "title": "🌿 Vineyard Management Process",
+        "subtitle": "Your vineyard is in safe hands, growing steadily with year-round professional care.",
+        "sections": [
+            {
+                "heading": "Managed by an Expert Team",
+                "text": "Purchased vineyards are managed throughout the year by a team experienced in viticulture. Tasks such as pruning, irrigation, fertilization, pest and disease control are carried out professionally.",
+                "note": "💡 Even if the investor is far away, the vineyard remains in good hands."
+            },
+            {
+                "heading": "Annual Work Calendar",
+                "text": "Details on how the vineyard is managed throughout the year:",
+                "note": "📅 A unique strategy for each season.",
+                "list": [
+                    "Spring: Pruning, soil aeration",
+                    "Summer: Irrigation, disease monitoring",
+                    "Autumn: Harvest, yield reporting",
+                    "Winter: Winter preparation, maintenance"
+                ]
+            },
+            {
+                "heading": "Yield and Quality Tracking",
+                "text": "Every operation is recorded. Investors are provided with periodic reports and updates on the vineyard’s condition.",
+                "list": [
+                    "How many kilos of grapes were harvested?",
+                    "What was the quality of the grapes?",
+                    "What are the suggestions for the next period?"
+                ]
+            },
+            {
+                "heading": "Product Evaluation Options",
+                "text": "If desired, the investor can:",
+                "list": [
+                    "Bottle and sell the product under their own brand",
+                    "Sell in bulk",
+                    "Process as dried grapes or wine"
+                ],
+                "note": "🍇 Not just an investment, but a brand opportunity as well."
+            },
+            {
+                "heading": "Visual and Digital Monitoring",
+                "text": "The vineyard’s development is shared with investors through drone footage and monthly photos. Investors can also track the vineyard’s current status through a digital platform."
+            },
+            {
+                "heading": "On-Site Visits and Consultancy",
+                "text": "Investors can visit their vineyards at any time and receive one-on-one information from experts. Consultancy is also offered for vineyard development and expansion."
+            },
+            {
+                "heading": "Sustainable and Eco-Friendly Practices",
+                "text": "Environmentally conscious, sustainable agricultural techniques are used throughout the vineyard management process."
+            }
+        ],
+        "cta": "Contact Us and Start Your Vineyard Investment"
+    },
+    "vineyardManagementModel": {
+        "pageTitle": "Vineyard Management Model | Karun Real Estate",
+        "pageDescription": "At Karun Real Estate, we manage your vineyard investments with professional teams and ensure maximum return. Discover our modern agriculture & partnership model.",
+        "heroTitle": "Vineyard Management Model",
+        "heroSubtitle": "You are not alone in your investment – expert team, sustainable profit, modern agriculture",
+        "introTitle": "What Do We Do at Karun Real Estate?",
+        "introText": "With over 22 years of experience, we guide your real estate investments properly and support you throughout the purchasing, managing, and revenue sharing processes.",
+        "whatIsModelTitle": "What is the Vineyard Management Model?",
+        "whatIsModelText": "This is a sustainable partnership model where the investor owns the land and Karun Real Estate handles maintenance, production, and sales processes. It is based on profit sharing.",
+        "stepsTitle": "Step-by-Step Management Process",
+        "steps": [
+            "Selecting the most suitable land based on your budget",
+            "Title deed transactions with the landowner",
+            "Signing the vineyard maintenance & partnership agreement",
+            "Optional insurance coverage for trees & produce",
+            "Pruning, soil preparation, weed control and maintenance",
+            "Sulfur spraying & pest control if needed",
+            "Harvest and sales process of the grapes",
+            "Reporting: yield, income, and revenue breakdown"
+        ],
+        "profitTitle": "Profit Sharing & Partnership Structure",
+        "profitText": "The total revenue from the harvest is shared 50-50. The investor receives half of the net income, while the other half is Karun Real Estate’s service fee.",
+        "whyUsTitle": "Why Choose Karun Real Estate?",
+        "whyUsBullets": [
+            "22 years of experience in the sector",
+            "Global affiliations (Mastırtürk - Century21)",
+            "Local agricultural experts with vineyard experience",
+            "Transparent progress reporting and follow-up",
+            "Modern agriculture (hybrid farming, sustainability)"
+        ],
+        "ctaText": "Interested in vineyard investment or want more details?",
+        "ctaButton": "Contact Us Now"
+    }
+}

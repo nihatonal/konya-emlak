@@ -2,3 +2,63 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer utilities {
+  .link-underline {
+    @apply relative inline-block pb-1
+        after:absolute after:left-0 after:bottom-0
+        after:h-[2px] after:bg-bvs-accentGold after:w-full
+        after:origin-left after:scale-x-0
+        after:transition-transform after:duration-300;
+  }
+
+  .link-underline-active {
+    @apply after:scale-x-100;
+  }
+}
+body {
+  @apply bg-bvs-lightGreen; /* veya bg-bvs-lightGreen gibi */
+}
+/* react-burger-menu default styles örneği */
+/* Burger Menu Styles */
+
+.bm-burger-button {
+  position: fixed;
+  width: 26px;
+  height: 16px;
+  right: 20px;
+  top: 18px;
+}
+
+.bm-burger-bars {
+  background: #d4af37;
+}
+
+.bm-cross-button {
+  height: 24px;
+  width: 24px;
+}
+
+.bm-cross {
+  background: #ffffff;
+}
+.bm-menu-wrap {
+  top: 0 !important;
+  position: fixed !important;
+  height: 100vh !important;
+}
+.bm-menu {
+  background: #1c2b1f; /* Tailwind slate-900 gibi */
+  padding: 2.5em 1em 0;
+  font-size: 1.2em;
+  top: 0 !important; /* 🎯 Menü ekranın en üstünden başlasın */
+  position: fixed !important;
+  height: 100vh !important; /* Tüm ekranı kaplasın */
+}
+
+.bm-menu a {
+  display: block;
+  padding: 0.75rem 0;
+  color: #f9fafb; /* Tailwind zinc-50 gibi */
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
