@@ -14,7 +14,7 @@ const CookieConsent = () => {
   return (
     <div className="cookie-banner">
       <p>Bu site çerezler kullanmaktadır. Kullanımı kabul ediyorsanız, 'Kabul Et' butonuna tıklayın.</p>
-      <button onClick={handleAccept}>Kabul Et</button>
+      <button aria-label='submit cookie' onClick={handleAccept}>Kabul Et</button>
     </div>
   );
 };

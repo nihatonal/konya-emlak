@@ -19,7 +19,10 @@ const SideMenu = () => {
                 onStateChange={handleStateChange}
                 right // sağdan gelsin istersen bunu sil
             >
-                <NavLinks className="flex-col items-start" onClick={closeMenu} />
+                <NavLinks className="flex-col items-start"
+                    classDropNav="text-bvs-lightGreen"
+                    classDropNavItem="drop-nav-item"
+                    onClick={closeMenu} />
             </Menu>
         </div>
     );

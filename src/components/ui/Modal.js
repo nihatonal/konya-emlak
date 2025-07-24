@@ -9,7 +9,7 @@ import Backdrop from './Backdrop';
 const ModalOverlay = props => {
 
     const content = (
-        <div className={`fixed z-80 left-1/2 top-1/2
+        <div className={`fixed z-[99] left-1/2 top-1/2
         transform -translate-x-1/2 -translate-y-1/2
         p-8 bg-bvs-lightGreen w-[90%] md:w-auto
          ${props.className}`} ref={props.ref}>

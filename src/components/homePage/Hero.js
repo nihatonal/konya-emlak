@@ -1,15 +1,17 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
-import Modal from "./ui/Modal";
-import CallForm from "./CallForm";
-import { useHttpClient } from "../hooks/http-hook";
-import { useForm } from "../hooks/form-hook";
-import { VALIDATOR_REQUIRE, VALIDATOR_PHONE } from "../util/validators";
+import { VALIDATOR_REQUIRE, VALIDATOR_PHONE } from "../../util/validators";
 import { useTranslation } from "react-i18next";
-import Button from "./ui/Button";
-import Socials from "./Socials";
-import hero from '../assets/images/hero-uzum-bagi-ve-uzum-taneleri.webp'
+import hero from '../../assets/images/hero-uzum-bagi-ve-uzum-taneleri.webp'
+import { useHttpClient } from "../../hooks/http-hook";
+import { useForm } from "../../hooks/form-hook";
+import CallForm from "../CallForm";
+import Button from "../ui/Button";
+import Socials from "../Socials";
+import Modal from "../ui/Modal";
+import { useLocation } from "react-router-dom";
 function Hero() {
+    const location = useLocation();
     const [modal, showModal] = useState(false);
     const { isLoading, sendRequest } = useHttpClient();
     const [success, setSuccess] = useState(false);
@@ -44,6 +46,8 @@ function Hero() {
             }, 3000);
         } catch (err) { }
     };
+    const lng = location.pathname.split("/")[1];
+    const url = { tr: "/neden-bag-yatirimi", en: "/why-vineyard-investment" }
 
     return (
         <section className="relative min-h-screen w-full flex items-center justify-center bg-black px-8 py-24">
@@ -73,7 +77,7 @@ function Hero() {
                         >
                             <CallForm btn_name={t("hero.getSupport")} form_title={t("hero.callFormTitle")}
                                 btnClassName=" font-bold cursor-pointer text-bvs-lightGreen 
-                            rounded-lg shadow-md bg-bvs-darkGreen hover:bg-bvs-midGreen 
+                             shadow-md bg-bvs-darkGreen hover:bg-bvs-midGreen 
                             hover:text-white transition-all duration-300 text-center"
                             />
                         </motion.div>
@@ -81,14 +85,14 @@ function Hero() {
                             whileHover={{ scale: 1.05 }}
                             whileTap={{ scale: 0.95 }}
                         >
-                            <Button type="link" to='/neden-bag-yatirimi' label={t("hero.moreInfo")} class onClick={() => showModal(true)}
+                            <Button ariaLabel={"go-to-bag-yatirimi"} type="link" to={`/${lng}${url[lng]}`} label={t("hero.moreInfo")} class onClick={() => showModal(true)}
                                 btnClassName="font-bold cursor-pointer text-bvs-lightGreen
-                                 rounded-lg shadow-md bg-bvs-darkGreen hover:bg-bvs-midGreen
+                                  shadow-md bg-bvs-darkGreen hover:bg-bvs-midGreen
                                 hover:text-white transition-all duration-300 text-center"
                             />
                         </motion.div>
                     </div>
-                    <Socials className={"absolute z-1 bottom-[40%] md:top-[50%] right-2 md:flex-col gap-6"}/>
+                    <Socials className={"absolute z-1 bottom-[30%] md:top-[60%] right-2 md:flex-col gap-6"} />
 
                 </div>
 

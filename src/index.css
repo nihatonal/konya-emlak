@@ -26,7 +26,7 @@ body {
   width: 26px;
   height: 16px;
   right: 20px;
-  top: 18px;
+  top: 16px;
 }
 
 .bm-burger-bars {
@@ -58,7 +58,64 @@ body {
 .bm-menu a {
   display: block;
   padding: 0.75rem 0;
-  color: #f9fafb; /* Tailwind zinc-50 gibi */
   text-decoration: none;
   transition: color 0.2s ease;
+}
+.bm-menu .drop-nav-item {
+  color: "#48684D";
+  padding: 0.75rem;
+}
+
+.link-underline-active {
+  color: #d4af37; /* accentGold */
+  border-bottom: 1px solid #d4af37;
+}
+
+/* Logo */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap');
+
+.logo-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.logo-text {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: #e8e9e2; /* Açık renkli metin */
+  position: relative;
+  display: inline-block;
+  text-shadow: 0 0 8px rgba(255, 255, 255, 0.2); /* Glow efekti */
+
+  background: linear-gradient(
+    120deg,
+    #ffffff 0%,
+    #ffffff 40%,
+    #48684d 50%,
+    #ffffff 60%,
+    #ffffff 100%
+  );
+  background-size: 200%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+
+  animation: sheen 10s infinite linear;
+}
+@media screen and (max-width: 756px) {
+  .logo-text {
+    font-size: 1rem;
+  }
+}
+
+@keyframes sheen {
+  0% {
+    background-position: -100% 0;
+  }
+  100% {
+    background-position: 500% 0;
+  }
 }

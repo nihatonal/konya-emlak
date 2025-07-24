@@ -1,4 +1,34 @@
 {
+    "meta": {
+        "home": {
+            "title": "Bag Garden Investment | Trusted Vineyard and Real Estate Investments",
+            "description": "With 17 years of expertise in the Konya Bozkır region, Bag Garden Investment offers sustainable vineyard investments and profitable real estate opportunities. Contact us now for eco-friendly and high-yield investments!"
+        },
+        "about": {
+            "title": "About Us | Bag Bahce Investment",
+            "description": "With 17 years of experience, your trusted partner in vineyard and agricultural investments."
+        },
+        "blog": {
+            "title": "Blog Bağ Bahçe Investment  | Industry News & Investment Tips",
+            "description": "Explore our blog for the latest news, insights, and expert tips on vineyard investments, farmland opportunities, and real estate trends."
+        },
+        "vineyards": {
+            "title": "Konya Bozkır Hamzalar Vineyards | Organic Grape Investment",
+            "description": "Discover unique grape varieties grown in the Hamzalar region of Konya Bozkır. Experience organic grapes cultivated with traditional methods, clean air, and natural water sources."
+        },
+        "contact": {
+            "title": "Contact Us - Our Vineyards & Collaboration Opportunities | Bağ Bahçe Investment",
+            "description": "Get in touch with us for questions, suggestions, or collaboration opportunities. We at Bağ Bahçe Investment are happy to assist you."
+        },
+        "whyvineyard": {
+            "title": "Vineyard Investment | Profitable and Sustainable Agricultural Investment",
+            "description": "Discover a high-return, long-term investment opportunity with vineyard ownership. Explore income models like winemaking, dried grapes, and table grapes in harmony with nature."
+        },
+        "process": {
+            "title": "Vineyard Purchase Process | Safe and Profitable Vineyard Investment",
+            "description": "Learn the steps of the vineyard purchase process. Make a secure investment and own vineyards."
+        }
+    },
     "nav": {
         "home": "Home",
         "vineyards": "Vineyards",
@@ -6,9 +36,11 @@
         "contact": "Contact",
         "blog": "Blog",
         "vineyardInvestment": "Vineyard Investment",
-        "investment": "Investment Info",
+        "investment": "Investment",
         "purchase": "Purchase Process",
-        "management": "Vineyard Management"
+        "management": "Vineyard Management",
+        "buyingProcess": "Buying Process",
+        "managementModel": "Management Model"
     },
     "header": {
         "motto": "Invest in Soil, Earn for the Future!",
@@ -92,47 +124,49 @@
         "submit_approve": "you agree to the processing of"
     },
     "testimonials": {
-        "title": "Customer Experiences – Trusted Vineyard Investment Stories",
-        "subtitle": "Check out real experiences from our vineyard investors. Discover their satisfaction with reliable, profitable, and sustainable vineyard investments!"
+        "title": "Vineyard Investors' Real Stories",
+        "subtitle": "Discover honest feedback from real investors about profitable, sustainable vineyard investments."
     },
     "blog": {
-        "title": "Current Information on Vineyard Investment and Vineyards",
-        "subtitle": "The latest information, expert opinions, and tips on vineyard investments. Don't miss the latest news on vineyards!",
+        "title": "Latest Blogs",
+        "subtitle": "The latest information, expert opinions, and tips on vineyard investments.",
         "readMore": "Read More →",
         "viewAll": "View All Blog Posts"
     },
     "contact": {
-        "title": "We Are Just a Phone Call Away for Your Dream Vineyard Investment!",
-        "subtitle": "Get detailed information about purchasing, operating, and generating income from vineyards. Let's evaluate the best investment opportunities for you.",
+        "title": "Contact Us",
+        "subtitle": "You can contact us for questions, suggestions, or collaboration inquiries.",
         "contactInfoTitle": "Contact Information",
-        "contactFormTitle": "Contact Form",
-        "nameLabel": "Full Name",
-        "emailLabel": "E-mail",
+        "address": "Address",
+        "phone": "Phone",
+        "email": "Email",
+        "message": "Your Message",
+        "nameLabel": "Your Name",
+        "emailLabel": "Email",
         "messageLabel": "Message",
         "namePlaceholder": "Enter your name",
         "emailPlaceholder": "Enter your email",
         "messagePlaceholder": "Enter your message",
-        "submitButton": "Submit"
+        "submitButton": "Send"
     },
     "footer": {
-        "company": "Company Info",
+        "description": "We are by your side for sustainable investments intertwined with nature. Your trusted partner in vineyard and agricultural investments.",
+        "company": "Company Information",
         "location": "Konya - Bozkır / Hamzalar",
         "contact": {
-            "phone": "+90 507 987 00 88",
+            "phone": "0507 987 00 88",
             "email": "info@bagyatirimi.com"
         },
-        "quickMenu": "Quick Menu",
-        "followUs": "Follow Us",
+        "quickMenu": "Quick Links",
+        "followUs": "Join Our Newsletter",
+        "newsletter_desc": "Stay updated on the latest investment opportunities and agricultural projects.",
+        "newsletter_join": "Subscribe",
+        "contact_": "Contact",
+        "faq": "FAQ",
         "privacyPolicy": "Privacy Policy",
         "termsOfUse": "Terms of Use",
-        "copyright": "© 2025 Vineyard Investment & Management. All rights reserved.",
-        "links": {
-            "home": "Home",
-            "forSale": "Vineyards for Sale",
-            "aboutUs": "About Us",
-            "contact": "Contact",
-            "blog": "Blog"
-        }
+        "cookies": "Cookie Policy",
+        "copyright": "© Bağ Bahçe Investment. All rights reserved."
     },
     "bozkir": {
         "helmet": {
@@ -158,17 +192,25 @@
         "harvest_description": "The harvest process varies depending on grape type and local climate. After being picked, grapes are carefully processed using traditional methods, ensuring their quality is preserved."
     },
     "aboutUs": {
-        "heroTitle": "Bağ Bahçe Yatırım: Secure Investments in the Real Estate Sector for 17 Years",
-        "heroSubtitle": "Offering the best investment opportunities in the sector with the assurance and the experience of Lidya Emlak.",
-        "historyTitle": "17 Years in the Sector: Trust, Experience, and Expertise",
-        "historySubtitle": "Starting our journey under the Lidya Emlak umbrella 17 years ago, we have provided our investors with secure and profitable opportunities.",
-        "missionVisionTitle": "Our Mission and Vision",
-        "missionSubtitle": "Our mission is to offer secure investments that will provide high profits for our investors.",
-        "visionSubtitle": "Our vision is to continuously strengthen our leadership in the sector and create more opportunities for our investors.",
-        "partnershipTitle": "Lidya Emlak: Stronger Together",
-        "partnershipSubtitle": "Bağ Bahçe Yatırım has formed a strong partnership with Lidya Emlak, offering the most reliable and professional solutions in the industry.",
-        "ctaTitle": "Invest in the Future, Gain High Profits with Bağ Bahçe Yatırım",
-        "ctaSubtitle": "If you want to make a secure and profitable real estate investment, you are in the right place. Contact us!"
+        "title": "Bağ Bahçe Investment: 17 Years of Trusted and Profitable Investments",
+        "subtitle": "With the assurance of Lidya Real Estate, we offer high-return investment opportunities in agriculture and real estate sectors.",
+        "historyTitle": "17 Years of Experience: Trust, Expertise, and Sustainable Growth",
+        "historySubtitle": "Since the beginning of our journey under the Lidya Real Estate brand, we have provided reliable and sustainable investment solutions to hundreds of investors.",
+        "historySubtitle_2": "Specializing in vineyard investments in the Konya Bozkır region, we continue to develop nature-friendly and highly profitable agricultural models.",
+        "experinceYear": "Years of Experience",
+        "happyCustomer": "Happy Investors",
+        "vineyardArea": "Hectares of Vineyards",
+        "happinessCustomer": "Customer Satisfaction",
+        "missionVisionTitle": "Our Mission & Vision",
+        "mission": "Our Mission",
+        "vision": "Our Vision",
+        "missionSubtitle": "To provide investors with secure, sustainable, and high-return agricultural investments while contributing to the agricultural economy of our country.",
+        "visionSubtitle": "To become Turkey's leading independent agricultural and real estate investment platform, ensuring long-term returns and security for every investor.",
+        "partnershipTitle": "Strategic Partnership with Lidya Real Estate: Strong Infrastructure, Professional Service",
+        "partnershipSubtitle": "Through our strategic partnership with Lidya Real Estate, Bağ Bahçe Investment offers investors professional and reliable solutions.",
+        "ctaTitle": "Add Value to Your Future: Take Secure Steps with Bağ Bahçe Investment",
+        "ctaSubtitle": "Direct your investments to nature, land, and sustainable projects. Contact us today for the right investment.",
+        "ctaBtn": "Contact Us"
     },
     "contact_page": {
         "meta": {
@@ -200,58 +242,51 @@
         }
     },
     "blogPage": {
-        "title": "Blog",
-        "metaTitle": "Viticulture Blog | Investment, Agriculture and Vineyards",
-        "metaDescription": "Explore the latest insights on vineyard investments, organic farming, and grape production.",
+        "title": "Blog & News",
+        "subtitle": "Discover the latest updates, industry insights, and expert tips from the world of investment.",
         "readMore": "Read More"
     },
     "vineyardInvestment": {
-        "meta": {
-            "title": "Vineyard Investment | Profitable and Sustainable Agricultural Investment",
-            "description": "Generate long-term income with vineyard investment. Discover great potential in winemaking, raisin production, and the agricultural sector."
-        },
-        "hero": {
-            "title": "Vineyard Investment: A Profitable Future in Nature",
-            "description": "Investing in vineyards offers significant potential not only in agriculture but also in industries like winemaking and raisin production..."
-        },
+        "title": "Vineyard Investment: A Profitable Future in Nature",
+        "subtitle": "Investing in vineyards holds great potential not only in the agricultural sector, but also in industries such as winemaking and dried grapes...",
         "advantages": {
             "title": "Advantages of Vineyard Investment",
-            "items": {
-                "1": "High-yield and sustainable investment opportunity",
-                "2": "Multiple revenue models such as winemaking, raisin production, and table grapes",
-                "3": "Potential for agricultural land to increase in value over time",
-                "4": "A long-term, rewarding investment experience close to nature"
-            }
+            "items": [
+                "A high-yield and sustainable investment opportunity",
+                "Diverse income models such as winemaking, dried grapes, and grapes",
+                "The potential for agricultural land to increase in value over time",
+                "A long-term investment opportunity in harmony with nature"
+            ]
         },
         "profitability": {
             "title": "Profitability in Vineyard Investment",
-            "text1": "In the market, the price per kilogram of dried grapes ranges between",
+            "text1": "The current market price for dried grapes per kilogram is",
             "priceRange": "250 - 350 TL",
-            "text2": ". Interestingly, the cost of 1 square meter of vineyard land is often equal to the price of one kilogram of grapes. This means that vineyard investors can generally recover their investment in",
+            "text2": ". Interestingly, the cost of 1 square meter of vineyard land is usually equal to the price of one kilogram of dried grapes. This means that investors can expect to recover their investment in about",
             "returnYears": "3-5 years",
             "text3": "."
         },
         "howToStart": {
-            "title": "How to Start a Vineyard Investment?",
-            "steps": {
-                "1": "Choose a productive vineyard area in the right location",
-                "2": "Determine the most suitable grape variety through soil analysis",
-                "3": "Implement effective agricultural solutions for long-term yield",
-                "4": "Identify target markets for grape sales in advance",
-                "5": "Get expert support for vineyard management"
-            }
+            "title": "How to Start Vineyard Investment?",
+            "steps": [
+                "Selecting a fertile vineyard area in the right location",
+                "Conducting soil analysis to determine the most suitable grape variety",
+                "Using effective agricultural solutions for long-term yield",
+                "Identifying marketing channels for the grapes in advance",
+                "Getting expert support for vineyard management"
+            ]
         },
         "risks": {
             "title": "Risks and Solutions in Vineyard Investment",
-            "intro": "Like any investment, vineyard investments also come with certain risks. Here are some of those risks and their possible solutions:",
-            "items": {
-                "1": "Weather conditions (freezing cold, excessive rain)",
-                "2": "Diseases and pests",
-                "3": "Market fluctuations",
-                "4": "Improper maintenance techniques",
-                "5": "Lack of insurance"
-            },
-            "conclusion": "However, with proper care techniques and insurance options, these risks can be minimized."
+            "intro": "As with any investment, vineyard investments also come with certain risks. Below are common risks and possible solutions:",
+            "items": [
+                "Weather conditions (freezing cold, heavy rainfall)",
+                "Diseases and pests",
+                "Market fluctuations",
+                "Incorrect care techniques",
+                "Lack of insurance"
+            ],
+            "conclusion": "However, with proper care techniques and adequate insurance, these risks can be minimized."
         },
         "footer": {
             "title": "Interested in Vineyard Investment?",
@@ -260,13 +295,8 @@
         }
     },
     "guide": {
-        "meta": {
-            "title": "Vineyard Purchase Process | Safe and Profitable Vineyard Investment",
-            "description": "Learn the steps of the vineyard purchase process. Make a secure investment and own vineyards."
-        },
-        "header": {
-            "title": "Vineyard Purchase Process"
-        },
+        "title": "Vineyard Purchase Process",
+        "subtitle": "A simple and secure way to become a vineyard owner",
         "cta": {
             "title": "Don’t Miss the Opportunities",
             "description": "You’ve learned about the vineyard investment process. Now it’s time to act! Contact us for exclusive offers and details.",
@@ -379,36 +409,146 @@
         "cta": "Contact Us and Start Your Vineyard Investment"
     },
     "vineyardManagementModel": {
-        "pageTitle": "Vineyard Management Model | Karun Real Estate",
-        "pageDescription": "At Karun Real Estate, we manage your vineyard investments with professional teams and ensure maximum return. Discover our modern agriculture & partnership model.",
-        "heroTitle": "Vineyard Management Model",
-        "heroSubtitle": "You are not alone in your investment – expert team, sustainable profit, modern agriculture",
-        "introTitle": "What Do We Do at Karun Real Estate?",
-        "introText": "With over 22 years of experience, we guide your real estate investments properly and support you throughout the purchasing, managing, and revenue sharing processes.",
+        "title": "Vineyard Management Model",
+        "subtitle": "You're not alone in your investment – professional team, sustainable income, modern agriculture",
         "whatIsModelTitle": "What is the Vineyard Management Model?",
-        "whatIsModelText": "This is a sustainable partnership model where the investor owns the land and Karun Real Estate handles maintenance, production, and sales processes. It is based on profit sharing.",
-        "stepsTitle": "Step-by-Step Management Process",
-        "steps": [
-            "Selecting the most suitable land based on your budget",
-            "Title deed transactions with the landowner",
-            "Signing the vineyard maintenance & partnership agreement",
-            "Optional insurance coverage for trees & produce",
-            "Pruning, soil preparation, weed control and maintenance",
-            "Sulfur spraying & pest control if needed",
-            "Harvest and sales process of the grapes",
-            "Reporting: yield, income, and revenue breakdown"
+        "whatIsModelText": "It is a sustainable partnership model where the investor owns the vineyard/land, and Lidya Real Estate manages the maintenance, production, and sales processes. It is based on a revenue-sharing principle.",
+        "stepByStepTitle": "Step-by-Step Vineyard Management Process",
+        "landSelectionTitle": "Land Selection",
+        "landSelectionText": "A suitable land is selected with ideal location and topography for investment.",
+        "soilPreparationTitle": "Soil Preparation",
+        "soilPreparationText": "Soil analyses are conducted, followed by drainage and tillage processes.",
+        "plantingTitle": "Sapling Planting",
+        "plantingText": "Selected grape varieties are professionally planted.",
+        "irrigationTitle": "Irrigation System",
+        "irrigationText": "Efficient systems like drip irrigation are installed and maintained.",
+        "harvestTitle": "Harvest",
+        "harvestText": "When the grapes mature, harvesting is carried out by professional teams.",
+        "whyThisModelTitle": "Why Choose This Model?",
+        "why": {
+            "sustainableIncome": "Offers long-term sustainable and regular income potential.",
+            "diversifiedRevenue": "Multiple revenue streams like wine, raisins, and table grapes.",
+            "landValueAppreciation": "Agricultural lands appreciate over time, providing capital gain potential.",
+            "natureConnected": "Provides a peaceful and healthy lifestyle in touch with nature.",
+            "professionalManagement": "All processes are managed by expert teams."
+        },
+        "profitScenarioTitle": "Return on Investment & Profit Scenario",
+        "profitNote": [
+            "* These figures are based on an average scenario and actual returns may vary depending on regional conditions, vineyard maintenance, and market dynamics.",
+            "It is strongly recommended to seek professional advice before investing."
         ],
-        "profitTitle": "Profit Sharing & Partnership Structure",
-        "profitText": "The total revenue from the harvest is shared 50-50. The investor receives half of the net income, while the other half is Karun Real Estate’s service fee.",
-        "whyUsTitle": "Why Choose Karun Real Estate?",
-        "whyUsBullets": [
-            "22 years of experience in the sector",
-            "Global affiliations (Mastırtürk - Century21)",
-            "Local agricultural experts with vineyard experience",
-            "Transparent progress reporting and follow-up",
-            "Modern agriculture (hybrid farming, sustainability)"
+        "profitScenarios": [
+            {
+                "title": "Initial Cost",
+                "description": "The total cost for vineyard setup, maintenance equipment, and first-year expenses is approximately 800,000 TL."
+            },
+            {
+                "title": "Annual Net Profit",
+                "description": "A well-managed vineyard can generate an average annual net profit of around 125,000 TL."
+            }
         ],
-        "ctaText": "Interested in vineyard investment or want more details?",
+        "faqTitle": "Frequently Asked Questions",
+        "faq": [
+            {
+                "question": "How long does it take to recover the investment?",
+                "answer": "Typically, the investment is recouped within 6–8 years. However, this depends on maintenance quality and marketing strategies."
+            },
+            {
+                "question": "How are title deed and ownership procedures handled?",
+                "answer": "All ownership procedures are secured through notarized and official title deed transfers."
+            }
+        ],
+        "ctaText": "Would you like to invest in a vineyard or get more information?",
         "ctaButton": "Contact Us Now"
+    },
+    "vineyards": {
+        "title": "A Vineyard in Nature’s Heart",
+        "subtitle": "Investment, flavor, and nature united in Hamzalar.",
+        "image": "https://i.imgur.com/aKIq7yL.webp",
+        "bolge_tanitimi": {
+            "isim": "Konya Bozkır Hamzalar",
+            "aciklama": "The Hamzalar region, located in Konya’s Bozkır district, is one of Anatolia’s most established agricultural areas. Its high altitude, clean air, natural water sources, and fertile soil provide a perfect environment for grape cultivation.",
+            "tarihce": "Viticulture in Hamzalar dates back centuries, developed through knowledge passed down from generation to generation. The region’s grape production is highly important for both local consumption and commercial sales."
+        },
+        "iklim_ve_toprak": {
+            "iklim": "Bozkır Hamzalar is influenced by a continental climate. Summers are hot and dry, while winters are cold. This harsh climate ensures the grapes are resilient and flavorful. The temperature difference between day and night enhances the grapes’ aromatic structure and makes the ripening process ideal.",
+            "toprak": "The soil is rich in minerals, calcareous, and provides excellent drainage. Thus, grapevine roots can grow deep to access water and nutrients efficiently. The soils of Hamzalar have a suitable pH level for viticulture and are rich in organic matter, giving our grapes their unique flavor profile."
+        },
+        "uzum_turleri": [
+            {
+                "isim": "Bozkır Black Grape",
+                "ozellikler": "Sweet, intensely aromatic, and thin-skinned. Suitable for table consumption and drying."
+            },
+            {
+                "isim": "Seedless White Grape",
+                "ozellikler": "Slightly sweet and aromatic. When dried, it has a long shelf life."
+            },
+            {
+                "isim": "Dimrit Grape",
+                "ozellikler": "With its acidic structure, it is suitable for winemaking and is highly durable."
+            },
+            {
+                "isim": "Emir Grape",
+                "ozellikler": "Suitable for white wine production, this variety grows at high altitudes."
+            },
+            {
+                "isim": "Local Aromatic Grapes",
+                "ozellikler": "Traditional grape varieties unique to the region."
+            }
+        ],
+        "bagcilik_yontemleri": [
+            {
+                "yontem": "Soil Preparation",
+                "aciklama": "We prepare the soil to provide essential nutrients for vine growth. Using natural fertilizers and organic materials, we improve soil structure, increase water retention capacity, and support biodiversity. This method preserves soil health and enhances long-term productivity."
+            },
+            {
+                "yontem": "Traditional Pruning Techniques",
+                "aciklama": "We apply traditional pruning techniques to ensure healthy vine growth and high-quality grape production. Pruning improves productivity, enhances air circulation, and ensures equal sunlight distribution to each vine. It also helps maintain balance throughout the annual growth cycle."
+            },
+            {
+                "yontem": "Natural Irrigation Methods",
+                "aciklama": "We use the region’s natural water sources to meet the vines’ water needs naturally. The increasingly common drip irrigation system delivers water directly to the roots, ensuring efficient water use. This method conserves water while promoting healthy vineyard development."
+            },
+            {
+                "yontem": "Biological Pest Control",
+                "aciklama": "By minimizing the use of chemical fertilizers and pesticides, we practice biological pest control in our vineyards. Using natural predators (such as beneficial insects) and organic solutions, we control pest populations. This approach encourages environmentally friendly and healthy grape production."
+            },
+            {
+                "yontem": "Temperature and Humidity Control",
+                "aciklama": "Temperature and humidity play a vital role in vine development. Therefore, we use natural methods to control the microclimate in our vineyards. We protect the vines using special coverings and windbreaks to mitigate adverse weather conditions."
+            }
+        ],
+        "hasat_ve_isleme": [
+            {
+                "type": "Harvesting",
+                "desc": "Grapes are carefully handpicked based on their ripeness levels. Each grape is carefully selected and quality-checked during harvesting. This process preserves the freshness and flavor of the grapes for optimal processing."
+            },
+            {
+                "type": "Drying",
+                "desc": "Grapes intended for drying are traditionally sun-dried. Grapes are dried naturally in hygienic conditions with sufficient airflow. This process preserves the sugars and nutritional values of the grapes, ensuring healthy drying."
+            },
+            {
+                "type": "Winemaking",
+                "desc": "The most suitable grapes for winemaking are carefully selected and prepared for fermentation. The fermentation process facilitates the chemical transformation necessary to produce wine. This stage enhances the flavors and aromas of the grapes, creating the ideal environment for quality wine production."
+            },
+            {
+                "type": "Storage",
+                "desc": "After drying and processing, grapes are stored under appropriate conditions to maintain freshness for a long time. Humidity and temperature are controlled during storage, ensuring the grapes are preserved without spoilage."
+            }
+        ],
+        "ekonomik_etki": [
+            {
+                "type": "Domestic Market",
+                "desc": "Local markets are a significant sales channel for Hamzalar grapes. Dried grapes, in particular, are in high demand and contribute significantly to the local economy. Producers meet the demand for quality and organic products by offering fresh and natural products directly to consumers. These markets encourage farmers to adopt sustainable agricultural practices while supporting healthy eating habits in the local community."
+            },
+            {
+                "type": "Export",
+                "desc": "Hamzalar grapes are offered to international markets. Their high quality makes them popular in European and Middle Eastern markets. Exporting opens global opportunities for local producers and supports regional economic growth. With the increasing global demand for healthy and organic products, Hamzalar grapes have secured a strong position in international markets, increasing producers’ incomes and contributing to local employment."
+            },
+            {
+                "type": "Tourism",
+                "desc": "Vineyard tours and traditional winemaking have significant tourism potential. Tourists explore the natural beauty of Hamzalar while learning about the historical and cultural importance of the vineyards. The grape cultivation process and traditional drying methods are showcased to visitors. Additionally, winemaking is made even more engaging through events organized by local wine producers."
+            }
+        ]
     }
 }

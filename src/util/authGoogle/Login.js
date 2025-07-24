@@ -46,7 +46,7 @@ const Login = () => {
             }
         };
 
-        return <button onClick={handleLogout}>Logout</button>;
+        return <button aria-label='login button' onClick={handleLogout}>Logout</button>;
     };
 
     useEffect(() => {

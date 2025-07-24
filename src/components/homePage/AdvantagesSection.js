@@ -2,7 +2,8 @@ import { useTranslation } from 'react-i18next';
 import { FaLeaf, FaCoins, FaClock, FaChartLine } from 'react-icons/fa';
 
 import { motion } from "framer-motion";
-import Container from '../Container';
+import Container from '../layout/Container';
+
 
 const AdvantagesSection = () => {
     const { t } = useTranslation();
@@ -29,7 +30,7 @@ const AdvantagesSection = () => {
         }
     ];
     return (
-        <Container>
+        <Container className={"pt-16 md:pt-32 pb-16"}>
             <div className="text-center">
                 <h2 className="text-3xl md:text-4xl font-bold text-bvs-deepGreen mb-4">
                     {t("advantage.title")}

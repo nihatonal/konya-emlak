@@ -6,6 +6,7 @@ export default function HamburgerMenu({ isOpen, setIsOpen }) {
         <button
             id="nav-icon"
             onClick={() => setIsOpen(!isOpen)}
+            aria-label="menu button"
             className={`
           relative z-[99] cursor-pointer
           w-[33px] h-[23px]

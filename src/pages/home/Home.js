@@ -1,25 +1,28 @@
 import React from 'react'
-import Hero from '../../components/Hero'
-import { Helmet, HelmetProvider } from "react-helmet-async";
+import { useTranslation } from 'react-i18next';
 import AdvantagesSection from '../../components/homePage/AdvantagesSection';
 import VineyardBanner from '../../components/homePage/VineyardBanner ';
 import VineyardServices from '../../components/homePage/VineyardServices ';
+import TestimonialsSection from '../../components/homePage/TestimonialsSection';
+import LatestBlogs from '../../components/homePage/LatestBlogs';
+import Hero from '../../components/homePage/Hero';
+import usePageMeta from '../../hooks/usePageMeta';
 
 const Home = () => {
+    const { t, } = useTranslation();
+    usePageMeta(
+        t('meta.home.title'),
+        t('meta.home.description')
+    );
     return (
         <div>
-            <HelmetProvider>
-                <Helmet>
-                    <title>Bağ Bahçe Yatırım</title>
-                    <meta name="description" content={`üzüm bağı ve yatırımı hakkında giriş`} />
-                    <link rel="canonical" href={`https://seninsite.com/satilik-uzum-bagi/`} />
-                </Helmet>
-            </HelmetProvider>
             <Hero />
             <AdvantagesSection />
             <VineyardBanner />
-            <VineyardServices/>
-        </div>
+            <VineyardServices />
+            <TestimonialsSection />
+            <LatestBlogs />
+        </div >
     )
 }
 

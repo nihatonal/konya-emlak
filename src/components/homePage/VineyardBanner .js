@@ -1,12 +1,12 @@
 import { motion } from "framer-motion";
 import { useTranslation } from "react-i18next";
-import Container from "../Container";
-
+import Container from "../layout/Container";
+import vineyardBanner from '../../assets/images/Leonardo_Lightning_XL_A_closeup_shot_of_a_pile_of_dried_black_1.webp'
 const VineyardBanner = () => {
     const { t } = useTranslation();
 
     return (
-        <Container>
+        <Container className={"py-16"}>
             <motion.div
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
@@ -38,7 +38,7 @@ const VineyardBanner = () => {
                 {/* Sağ Kısım: Görsel / İkon (İstersen değiştirilebilir) */}
                 <div className="flex-1 flex justify-center md:justify-end">
                     <img
-                        src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=600&q=80"
+                        src={vineyardBanner}
                         alt="Vineyard"
                         className="rounded-lg shadow-lg max-w-full h-auto object-cover"
                         loading="lazy"
