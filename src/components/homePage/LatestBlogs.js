@@ -7,18 +7,28 @@ import Container from '../layout/Container';
 // Tarihe göre en yeni 4 blogu döndüren fonksiyon
 function getLatestBlogs(language = 'tr', count = 4) {
   return blogs
-    .map(blog => ({
-      ...blog[language],
-      id: blog.id,
-      slug: blog[language].slug,
-      tags: blog.tags?.[language] || blog.tags || [],
-      date: blog.date,
-      image: blog.image,
-      original: blog
-    }))
+    .map(blog => {
+      const langData = blog[language];
+      if (!langData || !langData.slug) {
+        console.warn('Eksik blog verisi:', blog.id, blog);
+        return null;
+      }
+
+      return {
+        ...langData,
+        id: blog.id,
+        slug: langData.slug,
+        tags: blog.tags?.[language] || blog.tags || [],
+        date: blog.date,
+        image: blog.image,
+        original: blog
+      };
+    })
+    .filter(Boolean) // null'ları filtrele
     .sort((a, b) => new Date(b.date) - new Date(a.date))
     .slice(0, count);
 }
+
 
 
 
@@ -33,6 +43,7 @@ const LatestBlogs = () => {
   const { t, i18n } = useTranslation();
   const language = i18n.language
   const latestBlogs = getLatestBlogs(language);
+  
   return (
     <Container className="py-16">
       <h2 className="text-center text-3xl md:text-4xl font-bold text-bvs-deepGreen mb-4"> {t("blog.title")}</h2>

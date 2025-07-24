@@ -6,13 +6,12 @@ import './App.css';
 import './index.css';
 
 import { HelmetProvider } from 'react-helmet-async';
-// import GoogleLoginComp from './shared/components/GoogleLoginComp';
 import { AuthContext } from "./context/auth-context";
 import { useAuth } from "./hooks/auth-hook";
 import Header from './components/Header';
 import Footer from './components/Footer';
 import ScrollToTop from './components/ScrollToTop';
-//import WhatsappBtn from './shared/UI/WhatsappBtn';
+
 //pages
 const Home = React.lazy(() => import("./pages/home/Home.js"));
 const AboutUs = React.lazy(() => import("./pages/about/AboutUs.js"));

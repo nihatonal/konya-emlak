@@ -105,7 +105,7 @@ const Header = () => {
         <header className={`fixed top-0 z-[60] w-full flex items-center justify-between px-6 py-3 transition-all duration-300 ${headerClass}`}>
             <Logo />
 
-            <NavLinks className={`hidden md:flex`} classDropNav="text-bvs-lightGreen" />
+            <NavLinks className={`hidden lg:flex`} classDropNav="text-bvs-lightGreen" />
 
             <div className='flex items-center justify-center gap-4'>
                 <CallForm classButtonWrapper={"hidden md:flex"} btnClassName="text-white" btn_name={t("header.cta")} form_title={t("form.callFromTitle")} />

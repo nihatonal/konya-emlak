@@ -55,7 +55,7 @@ export const bagYatirimi = {
         description: "Being mindful when investing in vineyards opens the door to profitable long-term investments. What factors should you consider? How can you maximize your investment with soil quality, climate conditions, government incentives, and sustainable farming practices?",
         slug: "vineyard-investment",
         image: "https://i.imgur.com/0DHxxXx.webp",
-        contetn: [
+        content: [
             {
                 heading: "Land Selection: The Foundation of Viticulture",
                 text: "When investing in vineyards, the first factor to consider is land selection and local conditions.",
