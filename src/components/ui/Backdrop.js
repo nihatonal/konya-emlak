@@ -1,9 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-const Backdrop = props => {
+const Backdrop = ({ onClick }) => {
   return ReactDOM.createPortal(
-    <div className="fixed top-0 left-0 z-99 bg-bvs-dropBack/80 w-full h-screen" onClick={props.onClick}></div>,
+    <div
+      onClick={onClick}
+      className="fixed inset-0 z-[98] bg-bvs-dropBack/80"
+    />,
     document.getElementById('backdrop-hook')
   );
 };

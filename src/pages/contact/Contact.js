@@ -2,7 +2,6 @@ import { t } from 'i18next';
 import React, { useState } from 'react';
 import Socials from '../../components/Socials'
 import usePageMeta from '../../hooks/usePageMeta';
-import hero from '../../assets/images/blog/tabakta-kuru-uzum.jpg'
 const Contact = () => {
     const [formData, setFormData] = useState({
         name: '',
