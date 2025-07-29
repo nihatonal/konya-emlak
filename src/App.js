@@ -11,6 +11,9 @@ import { useAuth } from "./hooks/auth-hook";
 import Header from './components/Header';
 import Footer from './components/Footer';
 import ScrollToTop from './components/ScrollToTop';
+import LoginPage from './components/adminPage/LoginPage ';
+import AdminPanel from './pages/admin/AdminPanel';
+import ResetPasswordVerifyPage from './pages/admin/ResetPasswordVerifyPage';
 
 //pages
 const Home = React.lazy(() => import("./pages/home/Home.js"));
@@ -21,7 +24,25 @@ const Contact = React.lazy(() => import("./pages/contact/Contact.js"))
 const WhyVineyard = React.lazy(() => import('./pages/whyvineyard/WhyVineyard.js'));
 const Process = React.lazy(() => import('./pages/process/Process.js'))
 const Managment = React.lazy(() => import('./pages/managment/VineyardManagment.js'));
-const SingleBlogPage = React.lazy(() => import('./pages/blog/SingleBlogPage.js'))
+const SingleBlogPage = React.lazy(() => import('./pages/blog/SingleBlogPage.js'));
+const PrivacyPolicy = React.lazy(() => import('./pages/legal/PrivacyPolicy.js'));
+const CookiesPolicy = React.lazy(() => import('./pages/legal/CookiesPolicy.js'));
+const TermOfUse = React.lazy(() => import('./pages/legal/TermOfUse.js'));
+const FaqPage = React.lazy(() => import('./pages/legal/FaqPage.js'));
+
+
+function LayoutWrapper({ children }) {
+  const location = useLocation();
+  const isAdminRoute = location.pathname.startsWith('/admin');
+
+  return (
+    <>
+      {!isAdminRoute && <Header />}
+      {children}
+      {!isAdminRoute && <Footer />}
+    </>
+  );
+}
 
 function App() {
 
@@ -52,16 +73,50 @@ function App() {
   if (token) {
     routes = (
       <React.Fragment>
-        <Route path="/:lng">
-          <Route index element={<Home />} />  {/* yani /:lng */}
-          {/*<Route path="*" element={<NotFoundPage />} /> */}
+        <Route path="/admin">
+          {/* <Route path="login" element={<LoginPage />} /> */}
+          <Route path="panel" element={<AdminPanel />} />
+          <Route path="*" element={<AdminPanel />} />
         </Route>
+        <Route path="/:lng">
+          <Route path="/:lng">
+            <Route index element={<Home />} />  {/* yani /:lng */}
+            <Route path="hakkimizda" element={<AboutUs />} /> {/* /:lng/hakkimizda */}
+            <Route path="about-us" element={<AboutUs />} />   {/* /:lng/about-us */}
+            <Route path="blog" element={<Blog />} />  {/* /:lng/blog */}
+            <Route path="blog/:slug" element={<SingleBlogPage />} />
+            <Route path="vineyards" element={<VineyardsPage />} />
+            <Route path="baglarimiz" element={<VineyardsPage />} />  {/* /:lng/vineyardsPAge */}
+            <Route path="iletisim" element={<Contact />} />
+            <Route path="contact" element={<Contact />} />
+            <Route path="neden-bag-yatirimi" element={<WhyVineyard />} />
+            <Route path="why-vineyard-investment" element={<WhyVineyard />} />
+            <Route path="bag-alim-sureci" element={<Process />} />
+            <Route path="buying-process" element={<Process />} />
+            <Route path="bag-isletme" element={<Managment />} />
+            <Route path="vineyard-management" element={<Managment />} />
+            <Route path="privacy-policy" element={<PrivacyPolicy />} />
+            <Route path="gizlilik" element={<PrivacyPolicy />} />
+            <Route path="cookies" element={<CookiesPolicy />} />
+            <Route path="cerezler" element={<CookiesPolicy />} />
+            <Route path="terms-of-service" element={<TermOfUse />} />
+            <Route path="kullanim-kosullari" element={<TermOfUse />} />
+            <Route path="sik-sorulan-sorular" element={<FaqPage />} />
+            <Route path="faq" element={<FaqPage />} />
+            <Route path="*" element={<Home />} />
+          </Route>
+        </Route>
+        {/* <Route path="*" element={<AdminPanel />} /> */}
       </React.Fragment>
     );
   } else {
     routes = (
       <React.Fragment>
         <Route index element={<Home />} />
+        <Route path="/admin">
+          <Route path="login" element={<LoginPage />} />
+          <Route path="reset-password" element={<ResetPasswordVerifyPage />} />
+        </Route>
         <Route path="/:lng">
           <Route index element={<Home />} />  {/* yani /:lng */}
           <Route path="hakkimizda" element={<AboutUs />} /> {/* /:lng/hakkimizda */}
@@ -78,6 +133,15 @@ function App() {
           <Route path="buying-process" element={<Process />} />
           <Route path="bag-isletme" element={<Managment />} />
           <Route path="vineyard-management" element={<Managment />} />
+          <Route path="privacy-policy" element={<PrivacyPolicy />} />
+          <Route path="gizlilik" element={<PrivacyPolicy />} />
+          <Route path="cookies" element={<CookiesPolicy />} />
+          <Route path="cerezler" element={<CookiesPolicy />} />
+          <Route path="terms-of-service" element={<TermOfUse />} />
+          <Route path="kullanim-kosullari" element={<TermOfUse />} />
+          <Route path="sik-sorulan-sorular" element={<FaqPage />} />
+          <Route path="faq" element={<FaqPage />} />
+          <Route path="*" element={<Home />} />
         </Route>
       </React.Fragment>
     );
@@ -112,11 +176,12 @@ function App() {
                 </div>
               }
             >
-              <Header />
+              {/* <Header /> */}
               <ScrollToTop />
-              <Routes>{routes}</Routes>
-
-              <Footer />
+              <LayoutWrapper>
+                <Routes>{routes}</Routes>
+              </LayoutWrapper>
+              {/* <Footer /> */}
               {/* <WhatsappBtn /> */}
             </Suspense>
 

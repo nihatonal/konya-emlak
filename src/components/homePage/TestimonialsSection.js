@@ -5,7 +5,7 @@ import Masonry from "react-masonry-css";
 import Container from "../layout/Container";
 const TestimonialsSection = () => {
     const { t, i18n } = useTranslation();
-    const lang = i18n.language;
+    const lang = i18n.language.startsWith("tr") ? "tr" : "en";
 
     const breakpointColumnsObj = {
         default: 4,
@@ -66,14 +66,17 @@ const TestimonialsSection = () => {
 
     function formatDate(dateString, lang) {
         const date = new Date(dateString);
-
+        if (isNaN(date)) return dateString; // güvenlik önlemi
         return new Intl.DateTimeFormat(lang === "tr" ? "tr-TR" : "en-US", {
             year: "numeric",
             month: "long"
         }).format(date);
     }
 
+
+
     function AvatarBadge({ name }) {
+
         const initials = name.split(' ').map(n => n[0]).join('').toUpperCase();
         const pastelColors = [
             "#d199a0", // koyu pastel pembe
@@ -86,7 +89,14 @@ const TestimonialsSection = () => {
             "#c38d94", // gül kurusu pastel
             "#bfb1d0"  // koyu pastel leylak
         ];
-        const randomColor = pastelColors[Math.floor(Math.random() * pastelColors.length)];
+        function stringToColor(str) {
+            let hash = 0;
+            for (let i = 0; i < str.length; i++) {
+                hash = str.charCodeAt(i) + ((hash << 5) - hash);
+            }
+            return pastelColors[Math.abs(hash) % pastelColors.length];
+        }
+        const randomColor = stringToColor(name);
         return (
             <div
                 style={{ backgroundColor: randomColor }}
@@ -132,7 +142,7 @@ const TestimonialsSection = () => {
                                 <time className="text-sm text-gray-400">{formatDate(item.date, lang)}</time>
                             </div>
                         </div>
-                        <p className="text-gray-700 text-sm leading-relaxed">{item[`text_${lang}`]}</p>
+                        <p className="text-gray-700 text-sm leading-relaxed">{item?.[`text_${lang}`] || "..."}</p>
                     </div>
                 ))}
             </Masonry>

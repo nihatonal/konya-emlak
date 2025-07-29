@@ -5,7 +5,6 @@ import Container from "../layout/Container";
 const VineyardServices = () => {
     const { t } = useTranslation();
     const services = t("vineyard.services", { returnObjects: true });
-
     return (
         <Container className={"py-16"}>
             <div className="text-center mb-12">
@@ -17,7 +16,7 @@ const VineyardServices = () => {
                 </p>
             </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+            {services && Object.entries(services).length > 0 ? (<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
                 {Object.entries(services).map(([key, item], index) => (
                     <motion.div
                         key={key}
@@ -38,7 +37,9 @@ const VineyardServices = () => {
                         </p>
                     </motion.div>
                 ))}
-            </div>
+            </div>) : (
+                <p className="text-center text-gray-500">Hizmetler yüklenemedi.</p>
+            )}
 
             <div className="mt-10 flex items-center">
                 <CallForm className="mx-auto" btnClassName="text-white" btn_name={t("vineyard.button")} form_title={t("form.title")} />

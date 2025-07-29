@@ -74,6 +74,8 @@ export const vineyardTrend = {
         "summary": "Üzüm bağı yatırımları, teknolojinin, organik tarımın ve sürdürülebilirliğin etkisiyle gelecekte büyük bir değer kazanacaktır. Yatırımcılar için, doğru stratejilerle yapılan bağ yatırımları, hem ekonomik hem de çevresel açıdan büyük fırsatlar sunmaktadır. Tarım teknolojilerinin gelişmesi, organik gıda talebinin artması ve sürdürülebilir tarım uygulamaları, üzüm bağlarının geleceğini şekillendirecek ana faktörlerdir. Bu fırsatları doğru değerlendiren yatırımcılar, uzun vadede büyük kazançlar elde edebilirler."
     },
     en: {
+        metaTitle: "2025 Bağ Yatırımı Trendleri",
+        metaDescription: "Üzüm bağlarına yatırımın geleceği, yeni teknolojiler ve fırsatlar...",
         title: "The Future of Vineyard Investment: Trends and Opportunities",
         description:
             "With advancements in agricultural technologies and rising demand for organic food, vineyards are becoming more valuable. What changes are ahead for vineyard investments? Discover the details!",

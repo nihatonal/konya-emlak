@@ -9,6 +9,39 @@ const Footer = () => {
     const location = useLocation();
     const lng = location.pathname.split("/")[1]; // tr, en, vs.
 
+    const getLocalizedSlug = (lng, key) => {
+        const map = {
+            tr: {
+                "about-us": "hakkimizda",
+                "contact": "iletisim",
+                "privacy-policy": "gizlilik",
+                "cookies": "cerezler",
+                "blog": "blog",
+                "vineyards": "baglarimiz",
+                "why-vineyard-investment": "neden-bag-yatirimi",
+                "buying-process": "bag-alim-sureci",
+                "vineyard-management": "bag-isletme",
+                "faq": "sik-sorulan-sorular",
+                "terms-of-service": "kullanim-kosullari"
+            },
+            en: {
+                "about-us": "about-us",
+                "contact": "contact",
+                "privacy-policy": "privacy-policy",
+                "blog": "blog",
+                "vineyards": "vineyards",
+                "why-vineyard-investment": "why-vineyard-investment",
+                "buying-process": "buying-process",
+                "vineyard-management": "vineyard-management",
+                "faq": "faq",
+                "cookies": "cookies",
+                "terms-of-service": "terms-of-service"
+            }
+        };
+
+        return `/${lng}/${map[lng][key]}`;
+    };
+
     return (
         <footer className="bg-bvs-dropBack text-bvs-lightGreen px-6 py-14">
             <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-10">
@@ -29,12 +62,24 @@ const Footer = () => {
                     <p className="text-bvs-green font-semibold mb-4">{t("footer.quickMenu")}</p>
                     {/* <a href={`/${lng}/hakkimizda`} className="hover:text-bvs-accentGold text-sm transition">{t("nav.about")}</a>
                     <a href={`/${lng}/iletisim`} className="hover:text-bvs-accentGold text-sm transition">{t("footer.contact_")}</a> */}
-                    <a href={`/${lng}/bag-alim-sureci`} className="hover:text-bvs-accentGold text-sm transition">{t("nav.buyingProcess")}</a>
-                    <a href={`/${lng}/bag-isletme`} className="hover:text-bvs-accentGold text-sm transition">{t("nav.managementModel")}</a>
-                    <a href={`/${lng}/faq`} className="hover:text-bvs-accentGold text-sm transition">{t("footer.faq")}</a>
-                    <a href={`/${lng}/privacy-policy`} className="hover:text-bvs-accentGold text-sm transition">{t("footer.privacyPolicy")}</a>
-                    <a href={`/${lng}/cookies`} className="hover:text-bvs-accentGold text-sm transition">{t("footer.cookies")}</a>
-                    <a href={`/${lng}/terms-of-service`} className="hover:text-bvs-accentGold text-sm transition">{t("footer.termsOfUse")}</a>
+                    <a href={getLocalizedSlug(lng, "buying-process")} className="hover:text-bvs-accentGold text-sm transition">
+                        {t("nav.buyingProcess")}
+                    </a>
+                    <a href={getLocalizedSlug(lng, "vineyard-management")} className="hover:text-bvs-accentGold text-sm transition">
+                        {t("nav.managementModel")}
+                    </a>
+                    <a href={getLocalizedSlug(lng, "faq")} className="hover:text-bvs-accentGold text-sm transition">
+                        {t("footer.faq")}
+                    </a>
+                    <a href={getLocalizedSlug(lng, "privacy-policy")} className="hover:text-bvs-accentGold text-sm transition">
+                        {t("footer.privacyPolicy")}
+                    </a>
+                    <a href={getLocalizedSlug(lng, "cookies")} className="hover:text-bvs-accentGold text-sm transition">
+                        {t("footer.cookies")}
+                    </a>
+                    <a href={getLocalizedSlug(lng, "terms-of-service")} className="hover:text-bvs-accentGold text-sm transition">
+                        {t("footer.termsOfUse")}
+                    </a>
                 </div>
 
                 {/* Sağ Kısım */}
@@ -47,7 +92,7 @@ const Footer = () => {
                         <input
                             type="email"
                             placeholder={t("form.emailPlaceholder")}
-                            className="w-full sm:w-auto flex-1 px-3 py-2 rounded-lg bg-bvs-deepGreen text-white placeholder:text-bvs-green text-sm focus:outline-none"
+                            className="w-full sm:w-auto flex-1 px-3 py-2 rounded-lg bg-bvs-darkGreen text-white placeholder:text-bvs-green text-sm focus:outline-none"
                             required
                         />
                         <button

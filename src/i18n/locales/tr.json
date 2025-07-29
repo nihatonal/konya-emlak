@@ -1,36 +1,52 @@
 {
     "meta": {
         "home": {
-            "title": "Bağ Bahçe Yatırım | Güvenilir Üzüm Bağı ve Gayrimenkul Yatırımları",
-            "description": "Konya Bozkır bölgesinde 17 yıldır uzmanlaşmış Bağ Bahçe Yatırım, sürdürülebilir üzüm bağı yatırımları ve kazançlı gayrimenkul fırsatları sunar. Doğayla uyumlu ve karlı yatırımlar için hemen iletişime geçin!"
+            "title": "Bağ Bahçe Yatırımı | Güvenilir Bağ ve Gayrimenkul Yatırımları",
+            "description": "Konya Bozkır bölgesinde 17 yıllık uzmanlıkla, Bağ Bahçe Yatırımı sürdürülebilir bağ yatırımları ve kazançlı gayrimenkul fırsatları sunar. Doğayla dost ve yüksek getirili yatırımlar için hemen bizimle iletişime geçin!"
         },
         "about": {
-            "title": "Hakkımızda | Bağ Bahçe Yatırım",
-            "description": "Bağ Bahçe Yatırım: 17 Yıllık Tecrübe ile Güvenilir ve Karlı Yatırımlar"
+            "title": "Hakkımızda | Bağ Bahçe Yatırımı",
+            "description": "17 yıllık deneyim ile tarım ve bağ yatırımlarında güvenilir çözüm ortağınız."
         },
         "blog": {
-            "title": "Blog Bağ Bahçe Yatırım | Sektörden Haberler ve Yatırım Tavsiyeleri",
-            "description": "Üzüm bağı yatırımı, tarım arazileri ve gayrimenkul sektörü hakkında güncel haberler ve uzman tavsiyeleri için blog sayfamızı keşfedin."
+            "title": "Blog Bağ Bahçe Yatırımı | Sektör Haberleri ve Yatırım Tüyoları",
+            "description": "Üzüm bağı yatırımları, tarım arazileri ve gayrimenkul trendleri hakkında güncel haberler ve uzman görüşlerini blogumuzda keşfedin."
         },
         "vineyards": {
-            "title": "Konya Bozkır Hamzalar Üzüm Bağları | Organik Üzüm Yatırımı",
-            "description": "Konya'nın Bozkır ilçesine bağlı Hamzalar bölgesinde yetişen özel üzüm türlerini keşfedin. Yüksek rakım, doğal kaynaklar ve geleneksel yöntemlerle yetiştirilen organik üzümlerimizle tanışın."
+            "title": "Konya Bozkır Hamzalar Bağları | Organik Üzüm Yatırımı",
+            "description": "Konya Bozkır'ın Hamzalar bölgesinde yetiştirilen eşsiz üzüm çeşitlerini keşfedin. Temiz hava, doğal su kaynakları ve geleneksel yöntemlerle organik üretim."
         },
         "contact": {
-            "title": "Bize Ulaşın - Üzüm Bağlarımız ve İşbirliği İmkanları | Bağ Bahçe Yatırım",
-            "description": "Sorularınız, önerileriniz veya iş birliği talepleriniz için bizimle iletişime geçebilirsiniz. Bağ Bahçe Yatırım olarak size yardımcı olmaktan memnuniyet duyarız."
+            "title": "İletişim - Bağlarımız ve İşbirliği Fırsatları | Bağ Bahçe Yatırımı",
+            "description": "Sorularınız, önerileriniz veya işbirliği talepleriniz için bizimle iletişime geçin. Bağ Bahçe Yatırımı olarak size yardımcı olmaktan mutluluk duyarız."
         },
         "whyvineyard": {
             "title": "Bağ Yatırımı | Kazançlı ve Sürdürülebilir Tarım Yatırımı",
-            "description": "Üzüm bağı yatırımıyla doğayla iç içe, yüksek getirili ve uzun vadeli bir kazanç fırsatı yakalayın. Şarapçılık, kuru üzüm ve sofralık üzüm gibi farklı gelir modellerini keşfedin."
+            "description": "Şarapçılık, kuru üzüm ve sofralık üzüm gibi gelir modelleriyle doğayla uyumlu, yüksek getirili ve uzun vadeli bağ yatırımlarını keşfedin."
         },
         "process": {
-            "title": "Bağ Alım Süreci | Güvenli ve Kârlı Bağ Yatırımı",
-            "description": "Bağ alım sürecini adım adım öğrenin. Güvenli yatırım yaparak üzüm bağlarına sahip olun."
+            "title": "Bağ Alım Süreci | Güvenli ve Kazançlı Bağ Yatırımı",
+            "description": "Bağ alım sürecinin adımlarını öğrenin. Güvenle yatırım yapın ve kendi bağınıza sahip olun."
+        },
+        "privacy": {
+            "title": "Gizlilik Politikası | Bağ Bahçe Yatırımı",
+            "description": "Kişisel verilerinizi nasıl topladığımız, kullandığımız ve koruduğumuz hakkında bilgi edinin. Gizliliğiniz bizim için önemlidir."
+        },
+        "cookies": {
+            "title": "Çerez Politikası | Bağ Bahçe Yatırımı",
+            "description": "Web sitesi deneyiminizi geliştirmek için kullandığımız çerezler hakkında bilgi edinin. Şeffaflık ve kontrol sizin elinizde."
+        },
+        "termsofuse": {
+            "title": "Kullanım Koşulları | Bağ Bahçe Yatırımı",
+            "description": "Web sitemizi ve hizmetlerimizi kullanırken geçerli olan yasal şartları inceleyin. Haklarınızı ve sorumluluklarınızı öğrenin."
+        },
+        "faq": {
+            "title": "Sıkça Sorulan Sorular | Bağ Bahçe Yatırımı",
+            "description": "Bağ yatırımları, kazanç senaryoları, arazi yönetimi ve daha fazlasıyla ilgili sıkça sorulan soruların yanıtlarını burada bulabilirsiniz."
         },
         "management": {
-            "title": "",
-            "description": ""
+            "title": "Bağ İşletme Modeli | Profesyonel Tarım ve Sürdürülebilir Gelir",
+            "description": "Bağ yatırımınızda yalnız değilsiniz. Profesyonel ekip desteğiyle, modern tarım teknikleri ve sürdürülebilir işletme modeli sayesinde düzenli gelir elde edin."
         }
     },
     "nav": {
@@ -191,8 +207,8 @@
         "harvest_description": "Hasat süreci, yetiştirildiği bölgenin iklim koşullarına ve üzüm türüne bağlı olarak farklılık gösterir..."
     },
     "aboutUs": {
-        "title": "Bağ Bahçe Yatırım: 17 Yıllık Tecrübe ile Güvenilir ve Karlı Yatırımlar",
-        "subtitle": "Lidya Emlak güvencesiyle, tarım ve gayrimenkul sektörlerinde yüksek getirili yatırım fırsatları sunuyoruz.",
+        "title": "Bağ Bahçe Yatırım: 17 Yıllık Güven ve Tecrübe",
+        "subtitle": "Tarım ve gayrimenkulde, Lidya Emlak güvencesiyle karlı yatırım fırsatları sunuyoruz.",
         "historyTitle": "17 Yıllık Tecrübe: Güven, Uzmanlık ve İstikrarlı Büyüme",
         "historySubtitle": "Lidya Emlak çatısı altında başladığımız bu yolculukta, yüzlerce yatırımcımıza güvenilir ve sürdürülebilir yatırım çözümleri sunduk.",
         "historySubtitle_2": "Konya Bozkır bölgesinde uzmanlaştığımız üzüm bağı yatırımları ile, doğayla uyumlu ve yüksek kazançlı iş modelleri geliştirmeye devam ediyoruz.",
@@ -247,7 +263,7 @@
     },
     "vineyardInvestment": {
         "title": "Bağ Yatırımı: Doğanın İçinde Kazançlı Bir Gelecek",
-        "subtitle": "Üzüm bağı yatırımı, yalnızca tarım sektöründe değil, aynı zamanda şarapçılık ve kuru üzüm gibi endüstrilerde de büyük bir potansiyele sahiptir...",
+        "subtitle": "Üzüm bağları, tarımın yanı sıra şarapçılık ve kuru üzüm gibi alanlarda yüksek kazanç potansiyeli sunar.",
         "advantages": {
             "title": "Bağ Yatırımının Avantajları",
             "items": [
@@ -564,6 +580,124 @@
             {
                 "type": "Turizm",
                 "desc": "Bağ gezileri ve geleneksel şarap üretimi, turizm açısından büyük bir potansiyele sahiptir. Turistler, Hamzalar’ın doğal güzelliklerini keşfederken, bağların tarihsel ve kültürel önemi hakkında bilgi edinirler. Üzümlerin yetiştirilme süreci ve geleneksel kurutma yöntemleri ziyaretçilere tanıtılır. Ayrıca, şarap yapım süreci, bölgedeki şarap üreticileri tarafından düzenlenen etkinliklerle daha da ilgi çekici hale getirilir."
+            }
+        ]
+    },
+    "privacyPolicy": {
+        "title": "Gizlilik Politikası",
+        "intro": "Bağ Bahçe Yatırım olarak, kişisel verilerinizin gizliliğine büyük önem veriyoruz. Bu politika, web sitemizi kullandığınızda hangi verileri topladığımızı, bu verileri nasıl kullandığımızı ve koruduğumuzu açıklamaktadır.",
+        "collectedDataTitle": "Toplanan Bilgiler",
+        "collectedData": "Adınız, e-posta adresiniz, telefon numaranız ve iletişim formları aracılığıyla gönderdiğiniz bilgiler gibi kişisel veriler toplanabilir.",
+        "usageTitle": "Bilgilerin Kullanımı",
+        "usage": "Toplanan bilgiler; sizinle iletişime geçmek, hizmetlerimizi geliştirmek, kampanya ve bilgilendirme amaçlı e-postalar göndermek amacıyla kullanılabilir.",
+        "thirdPartiesTitle": "Üçüncü Taraflarla Paylaşım",
+        "thirdParties": "Kişisel verileriniz, yasal yükümlülükler dışında üçüncü kişilerle paylaşılmaz. İş ortaklarımızla sadece hizmet sağlamak amacıyla sınırlı paylaşım olabilir.",
+        "securityTitle": "Veri Güvenliği",
+        "security": "Verilerinizi korumak için güncel güvenlik teknolojileri ve güvenli sunucu altyapıları kullanmaktayız.",
+        "cookiesTitle": "Çerezler (Cookies)",
+        "cookies": "Web sitemizde kullanıcı deneyimini iyileştirmek amacıyla çerezler kullanıyoruz. Tarayıcı ayarlarınızdan çerezleri kontrol edebilirsiniz.",
+        "rightsTitle": "Haklarınız",
+        "rights": "KVKK kapsamında kişisel verilerinize erişme, düzeltme, silme ve işlenmesini durdurma haklarına sahipsiniz.",
+        "contactTitle": "İletişim",
+        "contact": "Gizlilik politikamızla ilgili herhangi bir sorunuz varsa bizimle iletişime geçebilirsiniz: info@bagbahceyatirim.com"
+    },
+    "cookies": {
+        "title": "Çerez Politikası",
+        "intro": "Bu Çerez Politikası, Bag Bahçe Yatırım web sitesini ziyaret ettiğinizde cihazınıza çerezlerin nasıl yerleştirildiğini ve bunların nasıl kullanıldığını açıklar.",
+        "whatAreCookies": {
+            "title": "Çerez Nedir?",
+            "text": "Çerezler, web siteleri tarafından tarayıcınız aracılığıyla cihazınıza yerleştirilen küçük metin dosyalarıdır. Bu dosyalar, kullanıcı tercihlerini hatırlamak, site içi deneyimi geliştirmek ve analiz sağlamak için kullanılır."
+        },
+        "typesOfCookies": {
+            "title": "Kullandığımız Çerez Türleri",
+            "necessary": "Gerekli çerezler: Web sitemizin temel işlevlerini sağlamak için gereklidir.",
+            "analytics": "Analitik çerezler: Site trafiğini ve kullanım alışkanlıklarını analiz ederek hizmetlerimizi geliştirmemize yardımcı olur.",
+            "preferences": "Tercih çerezleri: Dil ve bölge gibi kullanıcı tercihlerini hatırlar.",
+            "marketing": "Pazarlama çerezleri: Kullanıcıya daha alakalı reklamlar göstermek için kullanılır."
+        },
+        "manageCookies": {
+            "title": "Çerez Tercihlerinizi Yönetme",
+            "text": "Tarayıcı ayarlarınızdan çerezleri reddedebilir veya silebilirsiniz. Ancak bazı çerezlerin devre dışı bırakılması, web sitemizin bazı bölümlerinin düzgün çalışmamasına neden olabilir."
+        },
+        "changes": {
+            "title": "Çerez Politikasındaki Değişiklikler",
+            "text": "Bu politikayı zaman zaman güncelleyebiliriz. Önemli değişiklikleri sitemiz üzerinden duyururuz."
+        },
+        "contact": {
+            "title": "İletişim",
+            "text": "Çerez politikamız hakkında sorularınız varsa bizimle iletişime geçebilirsiniz: info@bagbahceyatirim.com"
+        }
+    },
+    "terms": {
+        "title": "Kullanım Şartları",
+        "intro": "Bu web sitesini kullanmadan önce lütfen aşağıdaki kullanım şartlarını dikkatlice okuyun. Web sitemizi kullanarak bu şartları kabul etmiş sayılırsınız.",
+        "useOfSite": {
+            "title": "Site Kullanımı",
+            "text": "Bu web sitesi yalnızca yasal amaçlarla kullanılabilir. Kullanıcılar, telif haklarını ihlal etmeyecek, başka kullanıcıları rahatsız etmeyecek veya sitenin güvenliğini tehdit etmeyecek şekilde davranmalıdır."
+        },
+        "intellectualProperty": {
+            "title": "Fikri Mülkiyet Hakları",
+            "text": "Bu sitedeki tüm içerikler (metin, görseller, logolar vb.) Bağ Bahçe firmasına aittir ya da lisanslıdır. Bu içeriklerin izinsiz kullanımı yasaktır."
+        },
+        "thirdPartyLinks": {
+            "title": "Üçüncü Taraf Bağlantılar",
+            "text": "Web sitemiz zaman zaman üçüncü taraf web sitelerine bağlantılar içerebilir. Bu sitelerin içeriği veya uygulamaları hakkında sorumluluk kabul etmiyoruz."
+        },
+        "limitationOfLiability": {
+            "title": "Sorumluluğun Sınırlandırılması",
+            "text": "Web sitemizin kesintisiz, hatasız veya virüssüz çalışacağını garanti etmiyoruz. Doğabilecek herhangi bir zarardan dolayı sorumluluk kabul edilmez."
+        },
+        "changes": {
+            "title": "Şartlarda Değişiklik",
+            "text": "Bu kullanım şartları zaman zaman güncellenebilir. Değişiklikler yayınlandığı anda yürürlüğe girer."
+        },
+        "contact": {
+            "title": "İletişim",
+            "text": "Bu kullanım şartlarıyla ilgili sorularınız için bizimle iletişime geçebilirsiniz."
+        }
+    },
+    "faq": {
+        "title": "Sıkça Sorulan Sorular",
+        "questions": [
+            {
+                "q": "Bağ yatırımı nedir?",
+                "a": "Bağ yatırımı, üzüm yetiştiriciliğine dayalı, toprak sahibi olmayı da kapsayan uzun vadeli bir yatırım türüdür."
+            },
+            {
+                "q": "Bağ yatırımı karlı mı?",
+                "a": "Doğru yönetilen bir bağ yatırımı; kuru üzüm, sofralık üzüm ve şarap üretimi gibi çoklu gelir modelleriyle oldukça karlı olabilir."
+            },
+            {
+                "q": "Yatırım geri dönüş süresi ne kadardır?",
+                "a": "İlk hasatlar 2-3 yıl içinde başlar, tam verim 4-5 yılda sağlanır. Geri dönüş süresi genellikle 7-10 yıldır."
+            },
+            {
+                "q": "Bağların bakımını kim üstleniyor?",
+                "a": "Profesyonel tarım ekiplerimiz, yatırımınızın bakımını yıl boyunca üstlenir. Size düzenli rapor sunulur."
+            },
+            {
+                "q": "Hangi üzüm çeşitleri yetiştiriliyor?",
+                "a": "Bölgeye uygun olarak sofralık (Red Globe, Sultaniye) ve şaraplık (Öküzgözü, Boğazkere) çeşitleri yetiştiriyoruz."
+            },
+            {
+                "q": "Yatırımı nasıl başlatabilirim?",
+                "a": "Web sitemizdeki başvuru formunu doldurarak veya bizimle iletişime geçerek süreci başlatabilirsiniz."
+            },
+            {
+                "q": "Bağımı ziyaret edebilir miyim?",
+                "a": "Evet, yatırımcılar yıl boyunca belirli dönemlerde bağlarını ziyaret edebilir."
+            },
+            {
+                "q": "Tapu devri yapılıyor mu?",
+                "a": "Evet, arsa yatırımı tapulu olarak yapılır. Tapu devir işlemleri noter huzurunda gerçekleştirilir."
+            },
+            {
+                "q": "Vergilendirme nasıl işliyor?",
+                "a": "Yatırım modeline göre vergilendirme farklılık gösterebilir. Danışmanlarımız size detaylı bilgi verir."
+            },
+            {
+                "q": "Yatırımımı devredebilir miyim?",
+                "a": "Evet, tapulu olduğunuz bağ yatırımınızı üçüncü kişilere devredebilirsiniz."
             }
         ]
     }

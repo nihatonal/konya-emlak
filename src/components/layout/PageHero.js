@@ -3,7 +3,7 @@ import React from 'react'
 const PageHero = ({ image, content }) => {
     return (
 
-        <div className="relative h-[60vh] md:h-[45vh] overflow-hidden">
+        <div className="relative h-[40vh] md:h-[45vh] overflow-hidden">
             <img
                 src={image}
                 alt="Vineyard"

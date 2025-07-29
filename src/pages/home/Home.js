@@ -9,11 +9,14 @@ import Hero from '../../components/homePage/Hero';
 import usePageMeta from '../../hooks/usePageMeta';
 
 const Home = () => {
-    const { t, } = useTranslation();
+    const { t, ready } = useTranslation();
+
     usePageMeta(
-        t('meta.home.title'),
-        t('meta.home.description')
+        ready ? t('meta.home.title') : '',
+        ready ? t('meta.home.description') : ''
     );
+
+    if (!ready) return <div>Yükleniyor...</div>;
     return (
         <div>
             <Hero />

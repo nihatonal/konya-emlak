@@ -27,6 +27,26 @@
         "process": {
             "title": "Vineyard Purchase Process | Safe and Profitable Vineyard Investment",
             "description": "Learn the steps of the vineyard purchase process. Make a secure investment and own vineyards."
+        },
+        "privacy": {
+            "title": "Privacy Policy | Bag Bahce Investment",
+            "description": "Understand how Bag Bahce Investment collects, uses, and protects your personal data. Your privacy is our priority."
+        },
+        "cookies": {
+            "title": "Cookie Policy | Bag Bahce Investment",
+            "description": "Learn how we use cookies to enhance your website experience. Read our cookie policy for full transparency and control options."
+        },
+        "termsofuse": {
+            "title": "Terms of Use | Bag Bahce Investment",
+            "description": "Review the legal terms and conditions for using our website and services. Ensure you understand your rights and responsibilities."
+        },
+        "faq": {
+            "title": "Frequently Asked Questions | Bag Bahce Investment",
+            "description": "Find answers to commonly asked questions about vineyard investments, returns, land management, and more."
+        },
+        "management": {
+            "title": "Vineyard Management Model | Professional Support & Sustainable Income",
+            "description": "You are not alone in your vineyard investment. Earn consistent income with our professional team, modern agricultural practices, and sustainable business model."
         }
     },
     "nav": {
@@ -192,8 +212,8 @@
         "harvest_description": "The harvest process varies depending on grape type and local climate. After being picked, grapes are carefully processed using traditional methods, ensuring their quality is preserved."
     },
     "aboutUs": {
-        "title": "Bağ Bahçe Investment: 17 Years of Trusted and Profitable Investments",
-        "subtitle": "With the assurance of Lidya Real Estate, we offer high-return investment opportunities in agriculture and real estate sectors.",
+        "title": "Vineyard Investment: 17 Years of Trust and Experience",
+        "subtitle": "We offer profitable agricultural and real estate investments with Lidya Emlak assurance.",
         "historyTitle": "17 Years of Experience: Trust, Expertise, and Sustainable Growth",
         "historySubtitle": "Since the beginning of our journey under the Lidya Real Estate brand, we have provided reliable and sustainable investment solutions to hundreds of investors.",
         "historySubtitle_2": "Specializing in vineyard investments in the Konya Bozkır region, we continue to develop nature-friendly and highly profitable agricultural models.",
@@ -248,7 +268,7 @@
     },
     "vineyardInvestment": {
         "title": "Vineyard Investment: A Profitable Future in Nature",
-        "subtitle": "Investing in vineyards holds great potential not only in the agricultural sector, but also in industries such as winemaking and dried grapes...",
+        "subtitle": "Vineyards offer strong earning potential in agriculture, winemaking, and raisin production.",
         "advantages": {
             "title": "Advantages of Vineyard Investment",
             "items": [
@@ -450,12 +470,12 @@
         "faqTitle": "Frequently Asked Questions",
         "faq": [
             {
-                "question": "How long does it take to recover the investment?",
-                "answer": "Typically, the investment is recouped within 6–8 years. However, this depends on maintenance quality and marketing strategies."
+                "q": "How long does it take to recover the investment?",
+                "a": "Typically, the investment is recouped within 6–8 years. However, this depends on maintenance quality and marketing strategies."
             },
             {
-                "question": "How are title deed and ownership procedures handled?",
-                "answer": "All ownership procedures are secured through notarized and official title deed transfers."
+                "q": "How are title deed and ownership procedures handled?",
+                "a": "All ownership procedures are secured through notarized and official title deed transfers."
             }
         ],
         "ctaText": "Would you like to invest in a vineyard or get more information?",
@@ -548,6 +568,116 @@
             {
                 "type": "Tourism",
                 "desc": "Vineyard tours and traditional winemaking have significant tourism potential. Tourists explore the natural beauty of Hamzalar while learning about the historical and cultural importance of the vineyards. The grape cultivation process and traditional drying methods are showcased to visitors. Additionally, winemaking is made even more engaging through events organized by local wine producers."
+            }
+        ]
+    },
+    "privacyPolicy": {
+        "title": "Privacy Policy",
+        "intro": "At Bağ Bahçe Yatırım, we highly value your privacy. This policy explains what data we collect when you use our website, how we use it, and how we protect it.",
+        "collectedDataTitle": "Information We Collect",
+        "collectedData": "We may collect personal data such as your name, email address, phone number, and any information you provide via contact forms.",
+        "usageTitle": "Use of Information",
+        "usage": "The collected information may be used to contact you, improve our services, and send promotional or informational emails.",
+        "thirdPartiesTitle": "Sharing with Third Parties",
+        "thirdParties": "Your personal data is not shared with third parties except as required by law. We may share limited data with partners to provide our services.",
+        "securityTitle": "Data Security",
+        "security": "We use modern security technologies and secure server infrastructure to protect your data.",
+        "cookiesTitle": "Cookies",
+        "cookies": "We use cookies to enhance the user experience on our website. You can control cookies through your browser settings.",
+        "rightsTitle": "Your Rights",
+        "rights": "Under data protection laws, you have the right to access, correct, delete, or restrict the processing of your personal data.",
+        "contactTitle": "Contact",
+        "contact": "If you have any questions about our privacy policy, feel free to contact us: info@bagbahceyatirim.com"
+    },
+    "cookies": {
+        "title": "Cookies Policy",
+        "intro": "This Cookies Policy explains how cookies are placed on your device and how they are used when you visit the Bag Bahçe Yatırım website.",
+        "whatAreCookies": {
+            "title": "What Are Cookies?",
+            "text": "Cookies are small text files placed on your device by websites via your browser. They are used to remember user preferences, improve site experience, and provide analytics."
+        },
+        "typesOfCookies": {
+            "title": "Types of Cookies We Use",
+            "necessary": "Necessary cookies: Required to provide the core functionality of our website.",
+            "analytics": "Analytics cookies: Help us improve our services by analyzing site traffic and usage patterns.",
+            "preferences": "Preference cookies: Remember user choices like language and region.",
+            "marketing": "Marketing cookies: Used to deliver more relevant advertising to the user."
+        },
+        "manageCookies": {
+            "title": "Managing Your Cookie Preferences",
+            "text": "You can refuse or delete cookies via your browser settings. However, disabling certain cookies may affect the functionality of some parts of our website."
+        },
+        "changes": {
+            "title": "Changes to This Policy",
+            "text": "We may update this policy from time to time. Significant changes will be announced on our website."
+        },
+        "contact": {
+            "title": "Contact",
+            "text": "If you have any questions about our cookies policy, please contact us at: info@bagbahceyatirim.com"
+        }
+    },
+    "terms": {
+        "title": "Terms of Use",
+        "intro": "Please read the following terms of use carefully before using this website. By using our website, you agree to these terms.",
+        "useOfSite": {
+            "title": "Use of the Website",
+            "text": "This website may only be used for lawful purposes. Users must not violate copyrights, disturb others, or threaten the site’s security."
+        },
+        "intellectualProperty": {
+            "title": "Intellectual Property",
+            "text": "All content on this site (text, images, logos, etc.) is owned or licensed by Bağ Bahçe. Unauthorized use of this content is prohibited."
+        },
+        "thirdPartyLinks": {
+            "title": "Third-Party Links",
+            "text": "Our website may occasionally contain links to third-party sites. We are not responsible for their content or practices."
+        },
+        "limitationOfLiability": {
+            "title": "Limitation of Liability",
+            "text": "We do not guarantee uninterrupted, error-free, or virus-free use of our site. We are not liable for any damages that may arise."
+        },
+        "changes": {
+            "title": "Changes to Terms",
+            "text": "These terms of use may be updated from time to time. Changes become effective once published."
+        },
+        "contact": {
+            "title": "Contact",
+            "text": "For any questions regarding these terms of use, please contact us."
+        }
+    },
+    "faq": {
+        "title": "Frequently Asked Questions",
+        "questions": [
+            {
+                "q": "What is vineyard investment?",
+                "a": "Vineyard investment means owning agricultural land planted with grapevines. These lands can generate income through grape sales, wine production, or dried grape exports."
+            },
+            {
+                "q": "Is vineyard ownership suitable for beginners?",
+                "a": "Yes, our team offers end-to-end consultancy services including land acquisition, setup, and vineyard management. You don’t need prior experience."
+            },
+            {
+                "q": "What kind of returns can I expect?",
+                "a": "Depending on the size and location of the vineyard, annual returns typically range between 12% to 18%. Additional income may come from land appreciation over time."
+            },
+            {
+                "q": "How long does it take to generate income?",
+                "a": "Income can start as early as the first year for mature vineyards. For new vineyards, full yields typically begin in the 2nd or 3rd year."
+            },
+            {
+                "q": "Can I visit or manage my vineyard remotely?",
+                "a": "Yes. You can visit your vineyard anytime. For remote investors, we offer transparent reporting, remote monitoring tools, and full-service management."
+            },
+            {
+                "q": "Is it possible to sell my vineyard later?",
+                "a": "Absolutely. Vineyard lands tend to appreciate over time. We also support investors with resale, including marketing and legal procedures."
+            },
+            {
+                "q": "What grape varieties are planted?",
+                "a": "We work with table grapes, wine grapes, and raisin varieties suitable for the region. Grape type selection depends on climate, soil, and investor goals."
+            },
+            {
+                "q": "Is this investment compatible with sustainability?",
+                "a": "Yes. Our vineyards follow sustainable farming practices, water-efficient irrigation, and eco-friendly solutions. This makes your investment green and future-proof."
             }
         ]
     }

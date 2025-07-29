@@ -11,16 +11,22 @@ const slugMapping = {
         "about-us": "/hakkimizda",
         "contact": "/iletisim",
         "privacy-policy": "/gizlilik",
+        "terms-of-service": "/kullanim-kosullari",
+        "faq": "/sik-sorulan-sorular",
+        "cookies": "/cerezler",
         "blog": "/blog",
         "vineyards": "/baglarimiz",
         "why-vineyard-investment": "/neden-bag-yatirimi",
         "buying-process": "/bag-alim-sureci",
-        "vineyard-management": "/bag-isletme"
+        "vineyard-management": "/bag-isletme",
     },
     en: {
         "hakkimizda": "/about-us",
         "iletisim": "/contact",
         "gizlilik": "/privacy-policy",
+        "cerezler": "/cookies",
+        "faq": "/faq",
+        "kullanim-kosullari": "/terms-of-service",
         "blog": "/blog",
         "baglarimiz": "/vineyards",
         "neden-bag-yatirimi": "/why-vineyard-investment",
@@ -57,7 +63,7 @@ const Header = () => {
 
     const [scrolled, setScrolled] = useState(false);
 
-    const isContactPage = /^\/(tr|en)?\/?(iletisim|contact)\/?$/.test(location.pathname);
+    const isContactPage = /^\/(tr|en)?\/?(sik-sorulan-sorular|faq|terms-of-service|kullanim-kosullari|iletisim|contact|privacy-policy|gizlilik|cookies|cerezler)\/?$/.test(location.pathname);
 
     useEffect(() => {
         const handleScroll = () => {

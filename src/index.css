@@ -26,7 +26,7 @@ body {
   width: 26px;
   height: 16px;
   right: 20px;
-  top: 16px;
+  top: 20px;
 }
 
 .bm-burger-bars {
@@ -48,7 +48,7 @@ body {
 }
 .bm-menu {
   background: #1c2b1f; /* Tailwind slate-900 gibi */
-  padding: 2.5em 1em 0;
+  padding: 2.5em 0.75em 0;
   font-size: 1.2em;
   top: 0 !important; /* 🎯 Menü ekranın en üstünden başlasın */
   position: fixed !important;
@@ -72,7 +72,7 @@ body {
 }
 
 /* Logo */
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap");
 
 .logo-wrapper {
   display: flex;
@@ -82,7 +82,7 @@ body {
 }
 
 .logo-text {
-  font-family: 'Playfair Display', serif;
+  font-family: "Playfair Display", serif;
   font-size: 1.75rem;
   font-weight: 700;
   color: #e8e9e2; /* Açık renkli metin */
@@ -107,7 +107,7 @@ body {
 }
 @media screen and (max-width: 756px) {
   .logo-text {
-    font-size: 1rem;
+    font-size: 1.25rem;
   }
 }
 
@@ -118,4 +118,74 @@ body {
   100% {
     background-position: 500% 0;
   }
+}
+
+/* admin navbar */
+
+/* --- keyframes --- */
+@keyframes icon-slide-in {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-6px);
+  }
+}
+@keyframes icon-slide-out {
+  from {
+    transform: translateX(-6px);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes label-slide-in {
+  from {
+    opacity: 0;
+    width: 0;
+    transform: translateX(10px);
+  }
+  to {
+    width: 100%;
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+@keyframes label-slide-out {
+  from {
+    width: 100%;
+    opacity: 1;
+    transform: translateX(0);
+  }
+  to {
+    width: 0;
+    opacity: 0;
+    transform: translateX(10px);
+  }
+}
+
+/* --- animation utility classes --- */
+.icon-slide-in {
+  animation: icon-slide-in 0.6s ease-in-out forwards;
+}
+.icon-slide-out {
+  animation: icon-slide-out 0.3s ease-in-out forwards;
+}
+
+.label-slide-in {
+  animation: label-slide-in 0.6s ease-in-out forwards;
+}
+.label-slide-out {
+  animation: label-slide-out 0.3s ease-in-out forwards;
+}
+ul,
+ol {
+  margin-left: 1.5rem;
+  padding-left: 1.5rem;
+  list-style-type: initial;
+}
+
+li {
+  margin-bottom: 0.25rem;
 }

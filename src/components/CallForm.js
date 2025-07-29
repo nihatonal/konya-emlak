@@ -31,11 +31,11 @@ function CallForm({
         e.preventDefault();
         try {
             await sendRequest(
-                `${process.env.REACT_APP_BACKEND_URL}/sendmail`,
+                `${process.env.REACT_APP_BACKEND_URL}/form`,
                 "POST",
                 JSON.stringify({
                     name: formState.inputs.name.value,
-                    email: '',
+                    email: 'Email geldi',
                     phone: formState.inputs.phone.value,
                     message: `${formState.inputs.name.value} adlı müşteri aramanızı bekliyor.`
                 }),

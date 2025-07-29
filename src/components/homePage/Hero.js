@@ -47,7 +47,8 @@ function Hero() {
         } catch (err) { }
     };
     const lng = location.pathname.split("/")[1];
-    const url = { tr: "/neden-bag-yatirimi", en: "/why-vineyard-investment" }
+    const url = { tr: "/neden-bag-yatirimi", en: "/why-vineyard-investment" };
+    const redirectUrl = url[lng] || url.tr; // fallback olarak tr
 
     return (
         <section className="relative min-h-screen w-full flex items-center justify-center bg-black px-8 py-24">
@@ -85,15 +86,13 @@ function Hero() {
                             whileHover={{ scale: 1.05 }}
                             whileTap={{ scale: 0.95 }}
                         >
-                            <Button ariaLabel={"go-to-bag-yatirimi"} type="link" to={`/${lng}${url[lng]}`} label={t("hero.moreInfo")} class onClick={() => showModal(true)}
+                            <Button ariaLabel={"go-to-bag-yatirimi"} type="link" to={`/${lng}${redirectUrl}`} label={t("hero.moreInfo")} class onClick={() => showModal(true)}
                                 btnClassName="font-bold cursor-pointer text-bvs-lightGreen
                                   shadow-md bg-bvs-darkGreen hover:bg-bvs-midGreen
                                 hover:text-white transition-all duration-300 text-center"
                             />
                         </motion.div>
                     </div>
-                    <Socials className={"absolute z-1 bottom-[30%] md:top-[60%] right-2 md:flex-col gap-6"} />
-
                 </div>
 
                 <Modal
@@ -112,6 +111,13 @@ function Hero() {
                         success={success}
                     />
                 </Modal>
+            </div>
+
+            {/* Burada sticky Socials kullanımı */}
+            <div className="hidden md:block md:fixed bottom-8 right-4 z-50">
+                <Socials className="flex flex-col gap-6"
+                    classIcon={`bg-bvs-darkGreen text-bvs-softGreen hover:bg-bvs-accentGold`}
+                />
             </div>
 
         </section>

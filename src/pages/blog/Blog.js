@@ -8,15 +8,24 @@ import usePageMeta from '../../hooks/usePageMeta';
 import PageHero from '../../components/layout/PageHero';
 function getLatestBlogs(language = 'tr', count = 4) {
     return blogs
-        .map(blog => ({
-            ...blog[language],
-            id: blog.id,
-            slug: blog.link,
-            tags: blog.tags?.[language] || blog.tags || [],
-            date: blog.date,
-            image: blog.image,
-            original: blog
-        }))
+        .map(blog => {
+            const langData = blog[language];
+            if (!langData || !langData.slug) {
+                console.warn('Eksik blog verisi:', blog.id, blog);
+                return null;
+            }
+
+            return {
+                ...langData,
+                id: blog.id,
+                slug: langData.slug,
+                tags: blog.tags?.[language] || blog.tags || [],
+                date: blog.date,
+                image: blog.image,
+                original: blog
+            };
+        })
+        .filter(Boolean) // null'ları filtrele
         .sort((a, b) => new Date(b.date) - new Date(a.date))
         .slice(0, count);
 }
@@ -33,7 +42,7 @@ const Blog = () => {
     const lng = location.pathname.split("/")[1]; // tr, en, vs.
 
     const language = i18n.language;
-    const latestBlogs = getLatestBlogs(language);
+    const latestBlogs = getLatestBlogs(lng);
     const content = t("blogPage", { returnObjects: true })
 
     usePageMeta(
@@ -56,7 +65,7 @@ const Blog = () => {
                             className="border border-1 hover:border-bvs-darkGreen/50 rounded-lg overflow-hidden transition bg-white"
                         >
                             <div className="relative h-48 overflow-hidden rounded-t-lg">
-                                {blog?.image && <NavLink to={blog.slug || `/blog/${blog.id}`}>
+                                {blog?.image && <NavLink to={`${blog.slug}`}>
                                     <img
                                         src={blog.image}
                                         alt={blog.title}
@@ -103,7 +112,7 @@ const Blog = () => {
                                 <div className='flex justify-end'>
                                     <NavLink
                                         className={"inline-block mt-4 text-sm font-semibold text-bvs-midGreen hover:text-bvs-darkGreen transition-colors duration-200 relative group"}
-                                        to={`${lng}/blog/${blog.slug}`}>
+                                        to={`${blog.slug}`}>
                                         {t("blogPage.readMore")}
                                         <span className="absolute left-0 bottom-0 w-0 h-0.5 bg-bvs-darkGreen transition-all duration-300 group-hover:w-full"></span>
                                     </NavLink>
