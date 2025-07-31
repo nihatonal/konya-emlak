@@ -49,9 +49,9 @@ function App() {
   const { token, login, logout, userId } = useAuth();
 
 
-  useEffect(() => {
-    window.history.scrollRestoration = 'manual'
-  }, []);
+  // useEffect(() => {
+  //   window.history.scrollRestoration = 'manual'
+  // }, []);
 
   function LanguageRedirector() {
     const navigate = useNavigate();

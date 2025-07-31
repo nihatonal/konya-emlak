@@ -29,7 +29,7 @@ function getLatestBlogs(language = 'tr', count = 4) {
         .sort((a, b) => new Date(b.date) - new Date(a.date))
         .slice(0, count);
 }
-
+console.log(blogs)
 const defaultTags = {
     tr: ['Tarım', 'Yatırım', 'Üzüm', 'Organik'],
     en: ['Agriculture', 'Investment', 'Grapes', 'Organic']

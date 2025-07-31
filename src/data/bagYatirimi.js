@@ -1,8 +1,10 @@
-import bagYatirimiImage from "../assets/images/blog/Leonardo_Lightning_XL_A_realistic_closeup_view_of_a_vineyard_d_2.webp";
+import landImage from "../assets/images/blog/Leonardo_Lightning_XL_A_realistic_closeup_view_of_a_vineyard_d_2.webp";
+import searchImage from "../assets/images/blog_images/bag-yatirimi-arazi-arastirmasi.webp";
+
 export const bagYatirimi = {
     id: "bag-yatirimi",
     date: "2025-02-10",
-    image: bagYatirimiImage,
+    image: landImage,
     link: "/blog/bag-yatirimi",
     author: {
         name: "John Dere",
@@ -25,7 +27,7 @@ export const bagYatirimi = {
             {
                 heading: "Arazi Seçimi: Bağcılığın Temel Taşı",
                 text: "Bağ yatırımı yaparken dikkate almanız gereken ilk faktör, arazinin seçimi ve yerel koşullardır. Doğru arazi seçimi, bağın uzun vadeli sağlıklı büyümesi için kritik bir adımdır.",
-                image: "https://i.imgur.com/HqbhQKt.webp"
+                image: searchImage
             },
             {
                 heading: "Yatırım Maliyeti: Başlangıç ve Süreklilik",
@@ -54,12 +56,11 @@ export const bagYatirimi = {
         title: "Things to Consider When Investing in Vineyards",
         description: "Being mindful when investing in vineyards opens the door to profitable long-term investments. What factors should you consider? How can you maximize your investment with soil quality, climate conditions, government incentives, and sustainable farming practices?",
         slug: "vineyard-investment",
-        image: "https://i.imgur.com/0DHxxXx.webp",
         content: [
             {
                 heading: "Land Selection: The Foundation of Viticulture",
                 text: "When investing in vineyards, the first factor to consider is land selection and local conditions.",
-                image: "https://i.imgur.com/HqbhQKt.webp"
+                image: searchImage
             },
             {
                 heading: "Investment Costs: Initial and Ongoing",

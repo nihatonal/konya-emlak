@@ -1,4 +1,5 @@
-import vineyardtrend from '../assets/images/blog/uzum-bagi-yatirimi-firsat-ve-trendler.webp'
+import vineyardtrend from '../assets/images/blog_images/uzum-bagi-yatirimi-firsat-ve-trendler.webp';
+import robots from '../assets/images/blog_images/uzum-bagi-yatirimi-firsat-ve-trendler-robotlar.webp';
 export const vineyardTrend = {
     id: "bag-yatirimi-trendleri",
     date: "2025-06-28",
@@ -28,7 +29,7 @@ export const vineyardTrend = {
                     "Dronelar: Dronelar, bağları izlemek, sağlık durumlarını analiz etmek ve zararlıları tespit etmek için kullanılabilir.",
                     "Yapay Zeka: Üzüm bağlarında verimlilik artırıcı çözümler sunan yapay zeka uygulamaları, toprak analizi, hava durumu tahminleri ve pest kontrolü gibi alanlarda büyük fayda sağlamaktadır."
                 ],
-                "image": "https://i.imgur.com/RcCKpVc.webp",
+                "image": robots,
             },
             {
                 "heading": "Artan Organik Gıda Talebi",
@@ -90,7 +91,7 @@ export const vineyardTrend = {
                     "Drones: Used to monitor vineyards, analyze plant health...",
                     "Artificial Intelligence: Assists with soil analysis, weather predictions, and pest control..."
                 ],
-                image: "https://i.imgur.com/RcCKpVc.webp",
+                "image": robots,
             },
             {
                 heading: "Rising Demand for Organic Food",

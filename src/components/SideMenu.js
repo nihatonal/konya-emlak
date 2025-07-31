@@ -14,7 +14,7 @@ const SideMenu = () => {
     };
 
     return (
-        <div className="relative z-50 md:hidden">
+        <div className="relative z-50 lg:hidden">
             <Menu
                 isOpen={menuOpen}
                 onStateChange={handleStateChange}

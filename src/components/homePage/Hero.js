@@ -53,7 +53,6 @@ function Hero() {
     return (
         <section className="relative min-h-screen w-full flex items-center justify-center bg-black px-8 py-24">
             <img
-                // src={"https://i.imgur.com/JeQl9s5.webp"}
                 src={hero}
                 alt={t("hero.imageAlt")}
                 className="absolute top-0 left-0 w-full h-full object-cover z-1"

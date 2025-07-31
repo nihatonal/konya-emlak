@@ -105,7 +105,16 @@ body {
 
   animation: sheen 10s infinite linear;
 }
+@media screen and (max-width: 1030px) {
+  .bm-burger-button {
+    top: 26px;
+  }
+}
+
 @media screen and (max-width: 756px) {
+  .bm-burger-button {
+    top: 20px;
+  }
   .logo-text {
     font-size: 1.25rem;
   }

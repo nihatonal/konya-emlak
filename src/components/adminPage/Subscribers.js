@@ -9,7 +9,6 @@ import { AuthContext } from '../../context/auth-context';
 
 
 import 'react-tooltip/dist/react-tooltip.css';
-import RichTextEditor from '../editor/RichTextEditor';
 import RichTextExample from '../editor/RichTextExample';
 
 const Subscribers = () => {
@@ -17,17 +16,36 @@ const Subscribers = () => {
   const { sendRequest, isLoading } = useHttpClient();
   // send message
   const [subject, setSubject] = useState("");
-  const [html, setHtml] = useState(" ");
   const [message, setMessage] = useState(null);
 
   const [subscribers, setSubscribers] = useState([]);
   const [search, setSearch] = useState('');
-  const [view, setView] = useState('subscribers'); // 'subscribers' | 'messages'
+  const [view, setView] = useState(false);
   const [messages, setMessages] = useState([]);
-  const [editorContent, setEditorContent] = useState([])
+  const [editorContent, setEditorContent] = useState([]);
+  const [selectedMessage, setSelectedMessage] = useState(null);
+  const [searchTerm, setSearchTerm] = useState('');
+  const [loading, setLoading] = useState(false);
 
   useEffect(() => {
-    fetchSubscribers();
+    const fetchData = async () => {
+      setLoading(true);
+      try {
+        const resSubs = await fetch(`${process.env.REACT_APP_BACKEND_URL}/newsletter`);
+        const resMsgs = await fetch(`${process.env.REACT_APP_BACKEND_URL}/admin/subscriber-messages`);
+        const subsData = await resSubs.json();
+        const msgsData = await resMsgs.json();
+        setSubscribers(subsData);
+        setMessages(msgsData);
+        setSelectedMessage(msgsData.reverse()[0])
+      } catch (err) {
+        console.error('Veriler alınamadı:', err);
+      } finally {
+        setLoading(false);
+      }
+    };
+
+    fetchData();
   }, []);
 
   // RichTextExample'den gelen Slate JSON verisini yakala
@@ -72,8 +90,6 @@ const Subscribers = () => {
     }).join('')
   }
 
-
-
   const handleSubmit = async () => {
     if (!subject) return alert("Konu alanı zorunlu");
 
@@ -92,20 +108,8 @@ const Subscribers = () => {
       );
       setMessage(res.message);
       setSubject("");
-      setHtml("");
     } catch (err) {
       alert("Gönderim başarısız");
-    }
-  };
-
-
-  const fetchSubscribers = async () => {
-    try {
-      const res = await fetch(`${process.env.REACT_APP_BACKEND_URL}/newsletter`);
-      const data = await res.json();
-      setSubscribers(data);
-    } catch (err) {
-      console.error('Aboneleri alırken hata:', err);
     }
   };
 
@@ -121,172 +125,183 @@ const Subscribers = () => {
     }
   };
 
-  const fetchMessages = async () => {
-    try {
-      const res = await fetch(`${process.env.REACT_APP_BACKEND_URL}/admin/subscriber-messages`);
-      const data = await res.json();
-      setMessages(data);
-    } catch (err) {
-      console.error('Mesajları alırken hata:', err);
-    }
-  };
-
   const filteredSubscribers = subscribers.filter((sub) =>
     sub.email.toLowerCase().includes(search.toLowerCase())
   );
 
-  const handleIconClick = (newView) => {
-    setView(newView);
-    if (newView === 'messages') fetchMessages();
+  const filteredMessages = messages.filter((msg) =>
+    msg.subject.toLowerCase().includes(searchTerm.toLowerCase())
+  ).reverse();
+
+  const handleResend = async (msg) => {
+    try {
+      // backend'e yeniden gönderme API isteği yap
+      const response = await fetch('/api/resend', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(msg),
+      });
+
+      if (!response.ok) throw new Error('Gönderim başarısız');
+
+      alert('Mesaj yeniden gönderildi.');
+    } catch (err) {
+      console.error(err);
+      alert('Hata oluştu. Lütfen tekrar deneyin.');
+    }
   };
 
   return (
-    <div className="p-4 max-w-3xl mx-auto">
+    <div className="px-4 py-4 max-w-7xl mx-auto ">
       {/* Üst ikon barı */}
-      <div className="flex justify-end gap-4">
-        <div className="flex justify-end items-center gap-4 mb-4">
-          <FaUsers
-            data-tooltip-id="subscribers-list-tooltip"
-            data-tooltip-content="Abone Listesi"
-            className={`${view === "subscribers" ? "text-sky-600" : ""} outline-none cursor-pointer text-2xl text-gray-400 hover:text-blue-600 transition`}
-            onClick={() => handleIconClick("subscribers")}
-          />
-          <Tooltip id="subscribers-list-tooltip" place="top" effect="solid" />
-        </div>
-
-        <div className="flex justify-end items-center gap-4 mb-4">
-          <FaEnvelopeOpenText
-            data-tooltip-id="message-list-tooltip"
-            data-tooltip-content="Mesaj Listesi"
-            className={`${view === "messages" ? "text-sky-600" : ""} outline-none cursor-pointer text-2xl text-gray-400 hover:text-blue-600 transition`}
-            onClick={() => handleIconClick("messages")}
-          />
-          <Tooltip id="message-list-tooltip" place="top" effect="solid" />
-        </div>
-        <div className="flex justify-end items-center gap-4 mb-4">
-          <HiOutlinePaperAirplane
-            data-tooltip-id="new-message-tooltip"
-            data-tooltip-content="Yeni Mesaj Gönder"
-            className={`${view === "form" ? "text-sky-600" : ""} outline-none cursor-pointer text-2xl text-gray-400 hover:text-blue-600 transition`}
-            onClick={() => handleIconClick("form")}
-          />
-          <Tooltip id="new-message-tooltip" place="top" effect="solid" />
-        </div>
+      <div className="flex justify-end mb-6">
+        <IconWithTooltip
+          buttonLabel={view ? "Mesajlar" : "Yeni Mesaj Gönder"}
+          icon={view ? <FaEnvelopeOpenText /> : <HiOutlinePaperAirplane />}
+          tooltip="Yeni Mesaj Gönder"
+          active={view}
+          onClick={() => setView(!view)}
+        />
       </div>
 
-      {view === "form" && (
-        <div className="space-y-3">
-          <div className="flex justify-between items-center">
-            <h3 className="text-lg font-semibold">Toplu Mesaj Oluştur</h3>
+      {/* Ana Grid */}
+      <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
+        {/* Sol Panel */}
+        <div className="space-y-6 md:col-span-1">
+          {/* Aboneler */}
+          <div className="bg-white shadow rounded-lg p-4">
+            <h3 className="text-lg font-semibold mb-3">Aboneler</h3>
+            <input
+              type="text"
+              placeholder="E-posta ile ara..."
+              value={search}
+              onChange={(e) => setSearch(e.target.value)}
+              className="w-full mb-4 px-3 py-2 border rounded focus:outline-none focus:ring-2 focus:ring-blue-400"
+            />
+            <div className="space-y-2 max-h-[300px] overflow-y-auto pr-2">
+              {filteredSubscribers.length > 0 ? (
+                filteredSubscribers.map((sub) => (
+                  <div
+                    key={sub._id}
+                    className="flex justify-between items-center p-3 bg-green-50 border rounded hover:shadow transition"
+                  >
+                    <div>
+                      <p className="font-medium text-sm text-gray-700">{sub.email}</p>
+                      {sub.name && <p className="text-xs text-gray-500">{sub.name}</p>}
+                    </div>
+                    <FaTrashAlt
+                      onClick={() => deleteSubscriber(sub._id)}
+                      className="text-red-500 cursor-pointer hover:text-red-700"
+                    />
+                  </div>
+                ))
+              ) : (
+                <p className="text-sm text-gray-500">Hiç abone yok.</p>
+              )}
+            </div>
           </div>
 
-          <input
-            type="text"
-            placeholder="Konu"
-            value={subject}
-            onChange={(e) => setSubject(e.target.value)}
-            className="w-full border rounded-lg px-3 py-2"
-          />
-          <div className="bg-white p-3 rounded-lg">
-            <RichTextExample onChange={handleEditorChange} />
+          {/* Mesaj Listesi */}
+          <div className="bg-white shadow rounded-lg p-4">
+            <h3 className="text-lg font-semibold mb-3">Mesajlar</h3>
+            <input
+              type="text"
+              placeholder="Konuya göre ara..."
+              className="w-full mb-4 px-3 py-2 border rounded focus:outline-none focus:ring-2 focus:ring-blue-400"
+              value={searchTerm}
+              onChange={(e) => setSearchTerm(e.target.value)}
+            />
+            <div className="space-y-2 max-h-[300px] overflow-y-auto pr-2">
+              {filteredMessages.length > 0 ? (
+                filteredMessages.map((msg, i) => (
+                  <div
+                    key={i}
+                    onClick={() => setSelectedMessage(msg)}
+                    className={`cursor-pointer px-3 py-2 border rounded hover:bg-gray-100 transition ${selectedMessage?.id === msg.id ? 'bg-gray-100 font-semibold' : ''
+                      }`}
+                  >
+                    <p className="text-sm truncate">{msg.subject}</p>
+                    <p className="text-xs text-gray-500">
+                      {new Date(msg.createdAt).toLocaleString()}
+                    </p>
+                  </div>
+                ))
+              ) : (
+                <p className="text-sm text-gray-500">Eşleşen mesaj bulunamadı.</p>
+              )}
+            </div>
           </div>
+        </div>
 
-          {/* <RichTextEditor onChange={setHtml} /> */}
-
-          {/* 
-          <textarea
-            placeholder="HTML içeriği"
-            value={html}
-            onChange={(e) => setHtml(e.target.value)}
-            className="w-full h-40 border rounded-lg px-3 py-2"
-          /> */}
-
-          <button
-            onClick={handleSubmit}
-            disabled={isLoading}
-            className="px-4 py-2 bg-green-600 text-white rounded-lg hover:bg-green-700 transition"
-          >
-            {isLoading ? "Gönderiliyor..." : (
-              <div className="flex items-center gap-2">
-                <Send className="w-4 h-4" /> Gönder
+        {/* Orta Panel */}
+        <div className="md:col-span-3 flex flex-col max-h-[80vh] overflow-y-auto overflow-x-hidden bg-white shadow rounded-lg p-6">
+          {view ? (
+            <div className="space-y-4">
+              <h3 className="text-xl font-semibold">Toplu Mesaj Oluştur</h3>
+              <input
+                type="text"
+                placeholder="Konu"
+                value={subject}
+                onChange={(e) => setSubject(e.target.value)}
+                className="w-full border rounded-lg px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-400"
+              />
+              <div className="bg-white p-3 rounded-lg border">
+                <RichTextExample onChange={handleEditorChange} />
               </div>
-            )}
-          </button>
-
-          {message && (
-            <p className="text-sm text-green-600 font-medium mt-2">{message}</p>
+              <button
+                onClick={handleSubmit}
+                disabled={isLoading}
+                className="inline-flex items-center gap-2 px-4 py-2 bg-green-600 text-white rounded-lg hover:bg-green-700 transition"
+              >
+                {isLoading ? "Gönderiliyor..." : <><Send className="w-4 h-4" /> Gönder</>}
+              </button>
+              {message && (
+                <p className="text-sm text-green-600 font-medium mt-2">{message}</p>
+              )}
+            </div>
+          ) : selectedMessage ? (
+            <div>
+              <div className="flex justify-between items-start mb-3">
+                <h2 className="text-xl font-semibold">{selectedMessage.subject}</h2>
+                <button
+                  className="text-sm px-3 py-1 bg-blue-600 hover:bg-blue-700 text-white rounded"
+                  onClick={() => handleResend(selectedMessage)}
+                >
+                  Yeniden Gönder
+                </button>
+              </div>
+              <p className="text-xs text-gray-500 mb-4">
+                Tarih: {new Date(selectedMessage.createdAt).toLocaleString()}
+              </p>
+              <div
+                className="prose prose-sm max-w-none text-gray-800 [&_ul]:list-disc [&_ul]:pl-5 [&_ol]:list-decimal [&_ol]:pl-5 [&_img]:rounded-lg [&_img]:max-w-full [&_img]:h-72"
+                dangerouslySetInnerHTML={{ __html: selectedMessage.html }}
+              />
+            </div>
+          ) : (
+            <p className="text-sm text-gray-500 italic">Bir mesaj seçin.</p>
           )}
         </div>
-      )}
-
-      {/* Arama filtresi */}
-      {view === 'subscribers' && (
-        <>
-          <input
-            type="text"
-            placeholder="E-posta ile ara..."
-            value={search}
-            onChange={(e) => setSearch(e.target.value)}
-            className="w-full mb-4 p-2 border rounded"
-          />
-
-          {/* Abone listesi */}
-          {filteredSubscribers.length > 0 ? (
-            filteredSubscribers.map((sub) => (
-              <div
-                key={sub._id}
-                className="flex justify-between items-center p-3 mb-2 bg-bvs-softGreen border rounded shadow-sm hover:shadow-md transition"
-              >
-                <div>
-                  <p className="font-medium">{sub.email}</p>
-                  {sub.name && <p className="text-sm text-gray-500">{sub.name}</p>}
-                </div>
-                <FaTrashAlt
-                  onClick={() => deleteSubscriber(sub._id)}
-                  className="text-red-500 cursor-pointer hover:text-red-700"
-                />
-              </div>
-            ))
-          ) : (
-            <p>Hiç abone bulunamadı.</p>
-          )}
-        </>
-      )}
-
-      {/* Mesajlar görünümü */}
-      {view === 'messages' && (
-        <div>
-          <h2 className="text-lg font-semibold mb-3">Toplu Gönderilen Mesajlar</h2>
-          {messages.length > 0 ? (
-            messages.map((msg, i) => (
-              <div
-                key={i}
-                className="border p-3 rounded mb-4 bg-gray-50"
-              >
-                <p className="text-md font-semibold text-gray-700 mb-1">
-                  {msg.subject}
-                </p>
-
-                <div
-                  className="prose prose-sm max-w-none text-gray-800 pl-4 [&>ul]:list-disc [&>ul]:pl-5 [&>ol]:list-decimal [&>ol]:pl-5 
-                       [&>img]:rounded-lg [&>img]:max-w-full [&>img]:h-auto"
-                  dangerouslySetInnerHTML={{ __html: msg.html }}
-                />
-
-                <p className="text-xs text-gray-500 mt-2">
-                  Tarih: {new Date(msg.createdAt).toLocaleString()}
-                </p>
-              </div>
-            ))
-          ) : (
-            <p>Henüz gönderilen mesaj yok.</p>
-          )}
-        </div>
-      )}
-
-
+      </div>
     </div>
   );
+
 };
 
 export default Subscribers;
+
+// IconWithTooltip bileşeni
+const IconWithTooltip = ({ buttonLabel, icon, tooltip, active, onClick }) => (
+  <div className="flex items-center">
+    <div
+      data-tooltip-id={tooltip}
+      data-tooltip-content={tooltip}
+      onClick={onClick}
+      className={`cursor-pointer transition ${active ? "text-sky-600" : "text-gray-500 hover:text-sky-600"}`}
+    >
+      <button className="text-sm inline-flex items-center gap-2">{buttonLabel}{icon}</button>
+    </div>
+    <Tooltip id={tooltip} place="top" effect="solid" />
+  </div>
+);
+

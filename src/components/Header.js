@@ -113,7 +113,7 @@ const Header = () => {
 
             <NavLinks className={`hidden lg:flex`} classDropNav="text-bvs-lightGreen" />
 
-            <div className='flex items-center justify-center gap-4'>
+            <div className='flex items-center md:pr-4 lg:pr-0 justify-center gap-4'>
                 <CallForm classButtonWrapper={"hidden md:flex"} btnClassName="text-white" btn_name={t("header.cta")} form_title={t("form.callFromTitle")} />
 
                 <div className="flex gap-1 mr-4 md:mr-0">

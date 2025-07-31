@@ -1,7 +1,10 @@
+import konyaovasi from '../assets/images/blog_images/konya-bag-yatirimi-konya-ovası.webp';
+import grapes from '../assets/images/blog_images/konya-bag-yatirimi-grapes-uzum-salkıimleri.webp'
+
 export const konyaBag = {
     id: "konyada-bag-yatirimi",
     date: "2025-03-08",
-    image: "https://i.imgur.com/ZeOgQDg.webp",
+    image: konyaovasi,
     author: {
         name: "John Dere",
         job: { tr: "Emlak Satış Uzmanı", en: "Real Estate Sales Expert" }
@@ -15,7 +18,7 @@ export const konyaBag = {
         metaDescription: "Konya’da üzüm bağcılığı yatırım fırsatlarını, devlet teşviklerini ve organik tarım avantajlarını keşfedin. Sürdürülebilir gelir için detaylı analiz.",
         title: "Konya’da Üzüm Bağlarının Avantajları",
         description: "Konya, verimli toprakları ve uygun iklimi ile üzüm bağları için Türkiye'nin en cazip bölgelerinden biri. Peki, Konya'da bağ sahibi olmanın farkı ne? İşte detaylar!",
-        image: "https://i.imgur.com/ZeOgQDg.webp",
+        image: konyaovasi,
         slug: "konyada-bag-yatirimi",
         content: [
             {
@@ -28,7 +31,7 @@ export const konyaBag = {
                     "Gece-gündüz sıcaklık farkı ile kaliteli üzüm aroması",
                     "Uzun hasat dönemi ile yüksek verim"
                 ],
-                image: "https://i.imgur.com/ZeOgQDg.webp"
+                image: konyaovasi
             },
             {
                 heading: "Devlet Destekleri ve Teşvikler",
@@ -40,7 +43,7 @@ export const konyaBag = {
                     "Sulama projeleri için devlet desteği",
                     "KOSGEB ve Tarım Bakanlığı hibeleri"
                 ],
-                image: "https://i.imgur.com/aOjE4Lu.webp"
+                image: grapes
             },
             {
                 heading: "Pazar ve İhracat İmkanları",
@@ -83,7 +86,7 @@ export const konyaBag = {
         metaDescription: "Explore Konya’s vineyard investment potential, including government support, export markets, and organic agriculture strategies for sustainable income.",
         title: "Advantages of Vineyards in Konya",
         description: "With fertile soil and a favorable climate, Konya is an ideal region for vineyard investment. Discover how government incentives and market potential create opportunities for investors.",
-        image: "https://i.imgur.com/ZeOgQDg.webp",
+        image: konyaovasi,
         slug: "vineyard-investment-in-konya",
         content: [
             {
@@ -96,7 +99,7 @@ export const konyaBag = {
                     "Day-night temperature differences enhancing grape flavor",
                     "Extended harvest period for higher yield"
                 ],
-                image: "https://i.imgur.com/ZeOgQDg.webp"
+                image: konyaovasi
             },
             {
                 heading: "Government Support and Incentives",
@@ -108,7 +111,7 @@ export const konyaBag = {
                     "Irrigation project supports",
                     "KOSGEB and Ministry of Agriculture grants"
                 ],
-                image: "https://i.imgur.com/aOjE4Lu.webp"
+                image: grapes
             },
             {
                 heading: "Market and Export Opportunities",
